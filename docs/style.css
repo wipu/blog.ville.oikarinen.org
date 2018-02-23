@@ -43,6 +43,13 @@ p.jroller-origin > a {
 	color: DarkGray;
 }
 
+p.subtitle {
+	font-style:italic;
+	font-size: smaller;
+	text-align: right;
+	color: MidnightBlue;
+}
+
 img {
 	border-style: solid;
 	border-width: thin;
