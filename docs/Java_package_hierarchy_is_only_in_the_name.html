@@ -1,0 +1,14 @@
+<html><head><title>Java package hierarchy is only in the name</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Java package hierarchy is only in the name</h1><p>
+One of the minor annoyances of Java is that a package and its parent are as foreign to each other than any other pair of packages.
+</p>
+<p>
+In practice this means that if I want to split a package (module) into subpackages (why wouldn't I?), all interfaces meant for "internal communication" inside the module must be visible to other packages as well.
+</p>
+<p>
+A related problem is that there is no such thing as package private interfaces. Sure, the interface itself can be package private, but the method implementations must be public. So if I use a package private interface inside a package, a class unfortunate enough to be public and implement this internal interface must publish the supposedly internal interface methods.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2007-09-21 at <a href='http://www.jroller.com/wipu/entry/java_package_hierarchy_is_only'>http://www.jroller.com/wipu/entry/java_package_hierarchy_is_only</a> under category Java</p>
+</body></html>

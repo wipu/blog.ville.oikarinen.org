@@ -1,0 +1,60 @@
+<html><head><title>Easy testing with embedded openejb and hsql</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Easy testing with embedded openejb and hsql</h1><p>
+In my current project I happened to question the need to install and set up a DBMS and an EJB container just to be able to run automatic tests during development. Luckily I found out that both openejb and hsql can be "embedded" i.e. used in-process with no per-workspace configuration.
+</p>
+<p>
+Now a new developer needs just pull the stuff from CVS and run the tests and they pass. No installation and no configuration, just Plain Old Coding TM :)
+</p>
+<p>
+Here is a quick HOWTO:
+</p>
+<p>
+1 Make a stripped down "installation" of openejb. The full installation works ok, too, but it's quite slow to start:
+<ul>
+<li>unzip the openejb package (I used 0.9.2) e.g. to tools/openejb under your project</li>
+<li>keep dist, lib, conf/logging.conf, conf/openejb.conf and delete everything else</li>
+<li>make a minimal conf/openejb.conf (this example only supports stateless session beans):</li>
+<pre>
+&lt;openejb>
+
+&lt;Container id="Default Stateless Container" ctype="STATELESS">
+    StrictPooling  true
+&lt;/Container>
+
+&lt;Deployments dir="../../build/deploy" />
+
+&lt;/openejb>
+</pre>
+<li>fix the log file paths in conf/logging.conf so logs are written under the temporary build directory OR configure log4j manually before calling any openejb code in your code</li>
+</ul>
+</p>
+<p>
+2 Add all openejb jars (dist/* and lib/*) and hsql.jar to classpath
+</p>
+<p>
+3 Make your build script create the ejb jar under build/deploy
+</p>
+<p>
+Now you can use the embedded openejb by creating the initial context like this:
+<pre>
+        Properties properties = new Properties();
+        properties.put(Context.INITIAL_CONTEXT_FACTORY,
+                "org.openejb.client.LocalInitialContextFactory");
+        // here "../your-ejb-project" makes this test work in any project:
+        System.setProperty("openejb.home",
+                "../your-ejb-project/tools/openejb");
+
+        InitialContext ctx = new InitialContext(properties);
+</pre>
+</p>
+<p>
+The embedded volatile hsql DBMS can be used by creating the connection like this:
+<pre>
+        Class.forName("org.hsqldb.jdbcDriver");
+        Connection c = DriverManager.getConnection("jdbc:hsqldb:mem:aname",
+                "sa", "");
+</pre>
+</p></div>
+<p class='jroller-origin'>Originally published on 2005-05-03 at <a href='http://www.jroller.com/wipu/entry/easy_testing_with_embedded_openejb'>http://www.jroller.com/wipu/entry/easy_testing_with_embedded_openejb</a> under category Java</p>
+</body></html>

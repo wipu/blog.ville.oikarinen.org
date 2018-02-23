@@ -1,0 +1,20 @@
+<html><head><title>Entity, valuetype and equals</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Entity, valuetype and equals</h1><p>
+There are lots of different classes of equality, but the distinction between <i>entities</i> and <i>valuetypes</i> is probably the most important aspect, since it is commonly needed and I have witnessed some misunderstanding with it.
+</p>
+
+<p>
+An entity is, by definition, identifiable by its identity. So it's an error to include any other attribute than the identifier in the <code>equals</code> method. A person won't change to another, when the hair colour attribute changes from "brown" to "none", for example. 
+</p>
+
+<p>
+(There may be some technical reasons, like <i>unit of work</i>, to implement a different <code>equals</code>, but I see this as a technical layer on top of the "actual" entity.)
+</p>
+
+<p>
+A valuetype, on the other hand, is identifiable by all its observable attributes. So it's an error to omit any of the attributes in the <code>equals</code> method.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2008-10-24 at <a href='http://www.jroller.com/wipu/entry/entity_valuetype_and_equals'>http://www.jroller.com/wipu/entry/entity_valuetype_and_equals</a> under category Java</p>
+</body></html>

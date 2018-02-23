@@ -1,0 +1,100 @@
+<html><head><title>Comparison of UIs as languages</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Comparison of UIs as languages</h1><p>
+Communication uses languages. Communication involving computers (human-computer and computer-computer) is no exception.
+</p>
+
+<p>
+The languages that are used at the "lowest level" are usually called programming languages: the machine language on the bottom, and
+general purpose languages, GPLs, right above it.
+This blog analyzes "higher level" languages, usually called <i>user interfaces</i> or <i>domain-specific languages</i>, using the following attributes:
+<ul>
+<li>Expressiveness: a measure of how well the language covers ideas and concepts of its domain i.e. how "much" can be said in the language.</li>
+<li>Ergonomics: a measure of how "easy" it is to use the language. An ergonomic language has little noise (high "semantic density") and redundancy.</li>
+<li>Integratability: a measure of how easy it is to use the language from other languages.</li>
+<li>Implementability: a measure of how easy it is to implement such a language.</li>
+</ul>
+</p>
+
+<h4>Internal textual languages (APIs)</h4>
+
+<h5>Internal API</h5>
+
+<ul>
+<li>All functionality is implemented by this so no other language can be more expressive.</li>
+<li>Inherits unfiltered noise from the implementation GPL, which may reduce ergonomics significantly.</li>
+<li>Integration is possible but laborous and introduces hard dependencies on volatile implementation details.</li>
+<li>As an essential part of every program requires no extra implementation effort.</li>
+</ul>
+
+<h5>Public API</h5>
+   
+<ul>
+<li>Some unsafe or otherwise unwanted expressiveness is removed when publishing an API; something essential may be lost, too.</li>
+<li>As a tidier version of the internal API this language may be somewhat less noisy, but not much.</li>
+<li>Integration is easier and more robust than using the internal API, since accidental details are hidden. The type system of the GPL often
+makes API-level integration the preferred form of integration, but only within the same GPL.</li>
+<li>Implementation is usually quite straightforward, but requires some "distilling" to make a good API.</li>
+</ul>
+
+<h5>API bindings for another GPL</h5>
+
+<ul>
+<li>As another version of the public API this language should be as expressive.</li>
+<li>Depending on the new GPL, this language may be either more or less ergonomic than the original public API. And since this
+language is probably implemented later, it might be possible to learn from the mistakes of the original public API.</li>
+<li>Increasing integratability is the motivation for creating this language, but this way it happens one GPL at a time.</li>
+<li>Implementation is straightforward but dull and technical.</li>
+</ul>
+
+<h4>External textual languages</h4>
+
+<h5>A language based on the Command Line Interface framework</h5>
+
+<ul>
+<li>Expressiveness may be reduced due to the restrictions of the framework: only one line can be used, and its length may be restricted.</li>
+<li>The framework (shell) introduces some noise, like whitespace escaping, but this is often relatively minimal.</li>
+<li>The shell makes it easy to generate sentences for this language so integration is easy.</li>
+<li>CLI argument parsing is usually easy to implement.</li>
+</ul>
+
+<h5>A language based on some other metalanguage</h5>
+
+<ul>
+<li>Proper metalanguages don't restrict expressiveness.</li>
+<li>The metalanguage may introduce some noise, but it is usually on the concrete syntax level.</li>
+<li>A common metalanguage makes it easier to integrate languages. Furthermore, if the producers and consumers of this language utilize streams instead of files, integration is
+very easy and powerful via pipes.</li>
+<li>Implementation requires work on the abstract syntax and semantics level, but the metalanguage helps a lot.</li>
+</ul>
+
+<h5>A fully custom language</h5>
+
+<ul>
+<li>There is no restriction for expressiveness.</li>
+<li>This is potentially the most ergonomic language, since its design can be completely dictated by domain-specific concerns.</li>
+<li>The lack of a common metalanguage or framework reduces integratability somewhat, but textual format helps a lot.</li>
+<li>This is the most laborous textual language to implement.</li>
+</ul>
+
+<h4>Non-textual languages</h4>
+
+<h5>GUI</h5>
+
+<ul>
+<li>This is usually the least expressive language, since many ideas cannot be expressed as gestures.</li>
+<li>If the domain is expressible as gestures, the mapping is usually very intuitive and ergonomic. The gesture metalanguage introduces certain noise, though, and
+long sentences are laborous and slow to express.</li>
+<li>Integration is often virtually impossible: GUI gestures are difficult to automate, manipulate and reroute reliably.</li>
+<li>Certain "standard" solutions may be relatively easy to implement, but often GUI tweaking takes a lot of time. One reason may be that there are often many stakeholders
+with their subjective opinions about good GUI design.</li>
+</ul>
+
+<h5>Other languages</h5>
+
+<p>
+Speech interface is a variation of a custom textual language, but not yet practical to implement. It's interesting to see what other language types emerge.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2008-03-26 at <a href='http://www.jroller.com/wipu/entry/comparison_of_uis_as_languages'>http://www.jroller.com/wipu/entry/comparison_of_uis_as_languages</a> under category Metaprogramming</p>
+</body></html>

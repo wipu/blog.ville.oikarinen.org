@@ -1,0 +1,29 @@
+<html><head><title>Server-client is a deployment model, not architectural</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Server-client is a deployment model, not architectural</h1><p>
+Separating interface and implementation is a good old principle,
+but surprisingly often it is violated.
+</p>
+
+<p>
+Maybe one reason for this is the misunderstood role of the server-client model.
+</p>
+
+<p>
+The server-client model is a <i>deployment</i> model. Or in other words, it describes the runtime properties of an application.
+</p>
+
+<p>
+However, in software architecture (in the source-code maintainability sense) these two layers are not enough. The server
+needs to be split into two: the api and its implementation.
+</p>
+
+<p>
+So the "minimal" set of modules for a client-server application is client-api-apiimpl.
+</p>
+
+<p>
+Of course, there can be several client and server implementations, but 3 is the minimum number of modules.
+</p></div>
+<p class='jroller-origin'>Originally published on 2006-01-04 at <a href='http://www.jroller.com/wipu/entry/server_client_is_a_deployment'>http://www.jroller.com/wipu/entry/server_client_is_a_deployment</a> under category Software Architecture</p>
+</body></html>

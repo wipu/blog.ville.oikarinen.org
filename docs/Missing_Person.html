@@ -1,0 +1,44 @@
+<html><head><title>Missing Person</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Missing Person</h1><p>
+This is a pattern I have discovered surprisingly often (you can also replace Patient with Customer and Doctor with Employee etc):
+</p>
+
+<p>
+<pre>
+public interface Patient {
+
+  String getFirstName();
+
+  String getLastName();
+
+  String getAddress();
+
+  // ...
+
+}
+
+public interface Doctor {
+
+  String getFirstName();
+
+  String getLastName();
+
+  String getAddress();
+
+  // ...
+
+}
+</pre>
+</p>
+
+<p>
+Either doctors are very healthy, or they are so shy they want another identity as patients :)
+</p>
+
+<p>
+Of course extra complexity isn't good either, but I have seen more often reason to extract the missing Person entity here than not to.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2007-10-05 at <a href='http://www.jroller.com/wipu/entry/missing_person'>http://www.jroller.com/wipu/entry/missing_person</a> under category Software Architecture</p>
+</body></html>

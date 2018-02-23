@@ -1,0 +1,32 @@
+<html><head><title>Hierarchy is not a property</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Hierarchy is not a property</h1><p>
+There are many cases where an item contains a property that defines its location inside a hierarchy:
+<ul>
+<li>In HTML a header element defines its own location in the (assumed) hierarchy of headers: an H1 header is "higher" than an H2 header.</li>
+<li>Latex sections also define their own level: there are sections, subsections and subsubsections.</li>
+<li>Java source files define their own package, and the information is usually redundantly reflected in the directory hierarchy, too.</li>
+</ul>
+   
+<p>
+This is an antipattern. The location in a hierarchy is not a property of the contained object.
+Instead, <i>the location in a hierarchy is simply defined by the location in a hierarchy.</i>
+</p>
+<p>
+If the parent-child relationship is defined <i>only</i> by an attribute in the child object, this is not a problem. One-to-many relationships in SQL are typically
+defined like this. (Technically references are often stored in both ends of a relationship, especially in volatile run-time objects, but this is just an optimization, hidden under the hood.)      
+</p>
+<p>
+The problem in all the examples above is that the hierarchy is defined <i>both</i> by an attribute of the child <i>and</i> the location of the child 
+in relation to other objects. This redundancy causes problems when the structure needs to be changed: the object needs to be both moved and changed.
+</p>
+   
+<p>
+The article language I wrote in <i>ngrease</i> is an abstraction of HTML and Latex, but in it sections are defined as a nested hierarchy. This makes
+writing and restructuring painless, especially if each section is defined in a separate file, included by its parent: Only <i>one layer thinking</i> is needed when writing
+a section, and the article can be restructured simply by moving section references (the "include" expressions), without any need to touch the referenced section
+definitions.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2008-02-11 at <a href='http://www.jroller.com/wipu/entry/hierarchy_is_not_a_property'>http://www.jroller.com/wipu/entry/hierarchy_is_not_a_property</a> under category Software Architecture</p>
+</body></html>

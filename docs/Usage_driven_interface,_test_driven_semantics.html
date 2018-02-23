@@ -1,0 +1,70 @@
+<html><head><title>Usage driven interface, test driven semantics</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Usage driven interface, test driven semantics</h1><h5>The problem</h5>
+
+<p>
+I need a class <i>A</i> to provide service <i>a</i> for me. First I create <i>ATest</i> and
+specify some of the wanted behaviour of <i>A</i> there. Then I start
+implementing <i>A</i>. All is well, I let <i>ATest</i> drive all the development.
+</p>
+<p>
+Then, during the implementation of <i>A</i> I start to realize that in order to
+fulfill its task <i>A</i> needs to delegate a subtask to a new class, <i>B</i>. Now,
+it's clearly the implementation of <i>A</i> that drives the development of <i>B</i>.
+But, according to the principle of test driven development, shouldn't I
+first create <i>BTest</i> that drives the development of <i>B</i>?
+</p>
+<p>
+If I do, which one is driving the development of <i>B</i>, <i>A</i> or <i>BTest</i>? (Of
+course, ultimately it's <i>ATest</i> that's driving, but if <i>A</i> and <i>B</i> are big
+enough units, that's not enough.)
+</p>
+<p>
+If the former, I'm not doing test driven development. If the latter, how
+can I make sure the resulting <i>B</i> satisfies the needs of its client <i>A</i>? Or
+should they both drive at the same time, which means a lot of
+context-switching (both mental and concrete) and duplicating code between <i>A</i>
+and <i>BTest</i>?
+</p>
+<p>
+The question isn't just theoretical, it's very practical. When applying
+the principle of <a href="http://www.jroller.com/page/wipu?entry=coding_by_need">coding by need</a> , it's the driving code from which
+I create and navigate to the production code under modification.
+</p>
+<p>
+Where should I press ctrl-1 to create <i>B</i> or one of its methods? Where
+should I ctrl-click to navigate to it so I can make it work?
+</p>
+<p>
+Fortunately the two questions above give a hint to a solution: two
+driver candidates and two questions...
+</p>
+
+<h5>The solution</h5>
+
+<p>
+The primary need that justifies the creation of <i>B</i> is in <i>A</i>. So I code by
+intention and write the algorithm in <i>A</i> that needs <i>B</i>, using ctrl-1 to
+create a stub <i>B</i>, never really mentally leaving <i>A</i>. Eclipse will create
+TODO comments in the stub <i>B</i> so that I won't forget to test and fix <i>B</i> even if the
+default "return null" happens to work for <i>A</i>.
+</p>
+<p>
+So far <i>A</i> has driven the creation of the <i>B</i> <u>interface</u> (in this context
+interface is more or less a synonym for signature).
+</p>
+<p>
+Now when I have one client for the new service that <i>B</i> provides, it's
+time to think more about the service and try to find the general
+contract its interface implies. This is where <i>BTest</i> takes over and
+starts to drive the <u>semantics</u> or implementation of the newly created interface.
+</p>
+<p>
+Put another way, <i>A</i> serves as a prototype that sketches one usage
+scenario for <i>B</i>. Most of the do-undo-redo work probably happens here.
+This prototype gives enough insight of the nature of <i>B</i> so it's
+straightforward to make all assumptions as general and explicit as
+possible by writing them as tests in <i>BTest</i>.
+</p></div>
+<p class='jroller-origin'>Originally published on 2006-06-13 at <a href='http://www.jroller.com/wipu/entry/usage_driven_interface_test_driven'>http://www.jroller.com/wipu/entry/usage_driven_interface_test_driven</a> under category Art of programming</p>
+</body></html>

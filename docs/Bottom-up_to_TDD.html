@@ -1,0 +1,19 @@
+<html><head><title>Bottom-up to TDD</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Bottom-up to TDD</h1><p>
+In my current client project we have found the following a good way to add new behaviour to our web application.
+</p>
+
+<p>
+A test for a web application depends on html details. But often we don't know these details when starting to write a new feature. So we first make the application output some hard-coded constant html. Sometimes this might even serve as a <i>spike solution</i> with which to practice some nasty integration, for example, but most of the time the data content really is hard-coded.
+</p>
+
+<p>
+When we have manually verified that this one special case looks good, we can write a test for it (encapsulating the html details in a <i>driver</i> class). The hard-coded values can even be adjusted to match the test expectations so we have really <i>done</i> one feature, or at least one special case of it.
+</p>
+
+<p>Now, with a working test framework, the the rest is plain old TDD: we just write one test at a time to show that some part of the html output needs to be parameterized.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2009-06-30 at <a href='http://www.jroller.com/wipu/entry/bottom_up_to_tdd'>http://www.jroller.com/wipu/entry/bottom_up_to_tdd</a> under category Art of programming</p>
+</body></html>

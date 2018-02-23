@@ -1,0 +1,29 @@
+<html><head><title>Coding by need</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Coding by need</h1><p>
+Test driven development essentially means that the only legitimate reason to write code
+is a failing test.
+</p>
+
+<p>
+I think this same "laziness" principle applies on the coding level, too: Failing compilation should be the only legitimate reason to create/modify classes and methods.
+</p>
+
+<p>
+In practice this means that in general you should first write the call and only then the called class or method. I call this <i>quickfix coding</i> (from the quickfix feature of Eclipse).
+</p>
+
+<p>
+This relates closely to the <i>coding by intention</i> principle mentioned in some XP book (maybe <i>XP installed</i>).
+Coding by intention helps in keeping your thoughts in one thing at a time. Furthermore it produces more readable code.
+</p>
+
+<p>
+Quickfix coding is more economic, too: you need fewer keystrokes as the IDE creates the signature for you. And you'll rarely need to manually open files or keep several of them open: if you start from the caller, you can always ctrl-click the call to open the called file and close it after the modification.
+</p>
+
+<p>
+I think <i>Coding by need</i> is a nice common name for TDD and Quickfix coding.
+</p></div>
+<p class='jroller-origin'>Originally published on 2005-10-07 at <a href='http://www.jroller.com/wipu/entry/coding_by_need'>http://www.jroller.com/wipu/entry/coding_by_need</a> under category Java</p>
+</body></html>

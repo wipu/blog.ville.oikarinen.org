@@ -1,0 +1,177 @@
+<html><head><title>Java method call performance</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Java method call performance</h1><p>
+Maybe this old performance test of mine interests someone.
+</p>
+<p>
+Here are the results using Sun JDK 1.4.2_09 and Windows XP:
+</p>
+
+<pre>
+Task array init took 3656ms.
+Task direct took 4110ms.
+Task method call took 4078ms.
+Task method call with parametrized addition took 4016ms.
+Task method call with parametrized addition and original took 4079ms.
+Task method call through interface took 15687ms.
+Task method call through final ref to interface (final impl) took 15531ms.
+Task method call through final ref to final class took 4219ms.
+</pre>
+
+<p>
+And here's the test:
+</p>
+
+<pre>
+package methodcallperformance;
+
+public class MethodCallPerformanceDemo {
+
+    protected static final int COUNT = 1000000;
+
+    protected static int[] data = new int[COUNT];
+
+    private static void init() {
+        for (int i = 0; i < COUNT; i++) {
+            data[i] = i;
+        }
+    }
+
+    public static void main(String[] args) {
+        time("array init", new Runnable() {
+
+            public void run() {
+                init();
+            }
+        });
+
+        time("direct", new Runnable() {
+
+            public void run() {
+                for (int i = 0; i < COUNT; i++) {
+                    data[i] = data[i] + 2;
+                }
+            }
+        });
+
+        time("method call", new Runnable() {
+
+            public void run() {
+                for (int i = 0; i < COUNT; i++) {
+                    increase(i);
+                }
+            }
+
+            private void increase(int i) {
+                data[i] = data[i] + 2;
+            }
+        });
+
+        time("method call with parametrized addition", new Runnable() {
+
+            public void run() {
+                for (int i = 0; i < COUNT; i++) {
+                    increase(i, 2);
+                }
+            }
+
+            private void increase(int i, int addition) {
+                data[i] = data[i] + addition;
+            }
+        });
+
+        time("method call with parametrized addition and original",
+                new Runnable() {
+
+                    public void run() {
+                        for (int i = 0; i < COUNT; i++) {
+                            increase(i, data[i], 2);
+                        }
+                    }
+
+                    private void increase(int i, int original, int addition) {
+                        data[i] = original + addition;
+                    }
+                });
+
+        time("method call through interface", new Runnable() {
+
+            public void run() {
+                for (int i = 0; i < COUNT; i++) {
+                    data[i] = calc.calculate(data[i]);
+                }
+            }
+        });
+
+        // this *could* be optimized by the JVM but Sun jdk 1.4 doesn't:
+        time("method call through final ref to interface (final impl)",
+                new Runnable() {
+
+                    public void run() {
+                        for (int i = 0; i < COUNT; i++) {
+                            data[i] = finalCalc.calculate(data[i]);
+                        }
+                    }
+                });
+
+        time("method call through final ref to final class", new Runnable() {
+
+            public void run() {
+                for (int i = 0; i < COUNT; i++) {
+                    data[i] = finalCalcImpl.calculate(data[i]);
+                }
+            }
+        });
+
+    }
+
+    public static Calculator calc = new CalculatorImpl();
+
+    public static final Calculator finalCalc = new CalculatorFinalImpl();
+
+    public static final CalculatorFinalImpl finalCalcImpl = new CalculatorFinalImpl();
+
+    public static interface Calculator {
+
+        int calculate(int i);
+
+    }
+
+    public static class CalculatorImpl implements Calculator {
+
+        public int calculate(int i) {
+            return i + 2;
+        }
+
+    }
+
+    public static final class CalculatorFinalImpl implements Calculator {
+
+        public int calculate(int i) {
+            return i + 2;
+        }
+
+    }
+
+    private static void time(String name, Runnable runnable) {
+        init();
+        // first run a warmup to give JIT a chance:
+        runTaskManyTimes(runnable);
+        // then lets measure:
+        long t1 = System.currentTimeMillis();
+        runTaskManyTimes(runnable);
+        long t2 = System.currentTimeMillis();
+        System.out.println("Task " + name + " took " + (t2 - t1) + "ms.");
+    }
+
+    private static void runTaskManyTimes(Runnable runnable) {
+        for (int i = 0; i < 500; i++) {
+            runnable.run();
+        }
+    }
+
+}
+</pre>
+</div>
+<p class='jroller-origin'>Originally published on 2007-06-19 at <a href='http://www.jroller.com/wipu/entry/java_method_call_performance'>http://www.jroller.com/wipu/entry/java_method_call_performance</a> under category Java</p>
+</body></html>

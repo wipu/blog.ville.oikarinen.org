@@ -1,0 +1,37 @@
+<html><head><title>CVS module structure for a multiproject with a main build script</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>CVS module structure for a multiproject with a main build script</h1>This may sound stupid to CVS gurus, but for me it took years to invent this essentially simple trick.
+<p>
+A common multiproject workspace structure is like this:
+<ul>
+  <li>product-x-workspace</li>
+  <ul>
+    <li>the_main_buildfile</li>
+    <li>the_main_readme</li>
+    <li>the_main_license</li>
+    <li>subproject-a</li>
+    <ul>
+      <li>buildfile_a</li>
+      <li>src</li>
+    </ul>
+    <li>subproject-b</li>
+    <ul>
+      <li>buildfile_b</li>
+      <li>src</li>
+    </ul>
+  </ul>
+</ul>
+
+If I wanted to use a separate submodule for the main buildfile as well as for the individual subprojects, I didn't find a way to include them directly to the workspace root. Instead I got a subdirectory for them.
+<p>
+Here is the solution: Assume subproject-a has been imported to <code>cvsroot/projecta</code>, subproject-b to <code>cvsroot/projectb</code> and the main buildscript etc to <code>cvsroot/commonfiles</code>. Now, the following module definition
+<pre>
+subproject-a -d product-x-workspace/subproject-a projecta
+subproject-b -d product-x-workspace/subproject-b projectb
+ws-commonfiles -d product-x-workspace commonfiles the_main_buildfile the_main_readme the_main_license
+product-x-workspace -d . &subproject-a &subproject-b &ws-commonfiles
+</pre>
+
+will give the wanted workspace structure using command <code>cvs co product-x-workspace</code>.</div>
+<p class='jroller-origin'>Originally published on 2005-08-12 at <a href='http://www.jroller.com/wipu/entry/cvs_module_structure_for_a'>http://www.jroller.com/wipu/entry/cvs_module_structure_for_a</a> under category SCM & process</p>
+</body></html>

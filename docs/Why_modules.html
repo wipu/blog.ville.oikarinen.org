@@ -1,0 +1,41 @@
+<html><head><title>Why modules</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Why modules</h1><p>
+<i>Why split a project into modules?</i>
+To organize the code? Not necessarily a bad idea, but this doesn't necessarily mean modularization: just use directories to create any of the endless taxonomies possible. Personally I don't really need this: I open the <a href="Traceability_and_entry_points.html">entry points</a> (often tests) directly by class name, and other code can be found by navigating, <a href="Coding_by_need.html">by need</a>.
+</p>
+
+<p>
+<i>What's modularization then if not just subdirectories?</i>
+If the code is compiled and published as one big ball, it's not modularized, even if it's internally split into subdirectories. <i>A module is a unit of compilation.</i> The modules can be compiled individually only, if their dependencies have no cycles. <i>Modularization <a href="Splitting_project_to_subprojects_for_easy_dependency_management.html">enforces</a> dependency management.</i>
+</p>
+
+<p>
+<i>Why bother managing dependencies?</i>
+This sounds like a trivial question, and on some level it is, for most programmers. Still, many projects seem to have dependency problems, so this is really worth thinking through carefully.
+</p>
+
+<p>
+When a piece of code needs to be modified, the most likely pieces that need to be modified together with it are the ones that depend on it. So dependency management is about minimizing maintenance costs.
+</p>
+
+<p>
+<i>Why does a piece of code need to be modified?</i>
+Another seemingly trivial question. A code needs to be modified to make the software behave in a new way. Now, this seemingly trivial chain of questions has lead us to the core question:
+</p>
+
+<p>
+<i>How to minimize the cost of implementing new behaviour?</i>
+Ideally we'd like all behaviour defined in one place. Some features are easy to implement like this, but others are more "aspect-like": they define common behaviour for many different parts of the software. If even that kinds of features can be implemented by modifying one piece of code, then that piece is quite obviously <i>reused</i> in many places.
+</p>
+
+<p>
+So, <i>a module is also a unit of reuse</i>, and that is in my opinion the most important and often overlooked reason for modularization.
+</p>
+
+<p>
+Now, lets take a new look at the first, most superficial reason for modularization: code organization. All taxonomies organize code, but the one based on usable, and ultimately reusable functionality is of any real value. For example, a module may contain many "kinds" of code (a service provides certain functionality together with related data and exceptions). The amount of code can vary very much between modules. If there is such a thing as too small a module, just fix it by adding bloat... right?
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2010-09-14 at <a href='http://www.jroller.com/wipu/entry/why_modules'>http://www.jroller.com/wipu/entry/why_modules</a> under category Software Architecture</p>
+</body></html>

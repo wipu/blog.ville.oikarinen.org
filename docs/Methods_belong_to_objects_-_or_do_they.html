@@ -1,0 +1,31 @@
+<html><head><title>Methods belong to objects - or do they?</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Methods belong to objects - or do they?</h1>One of the differences between OOP and procedural programming is that OOP binds the data and its operations together.
+<p>
+So it could be said that an object "owns" its methods.
+<p>
+From the object user's point of view this all there is to it. You see an object with methods just waiting for you to call them, and you can really think of the object "owning" the methods.
+<p>
+However, from the object creator's point of view (or class creator's, if you are not using a prototype based flavor of OOP), it's not that simple: it would be nice to be able to define a method simultaneously for a bunch of objects (classes). And like we all know, inheritance allows just that. And since inheritance is a "is-a-kind-of" relation, again we can think that the method really "belongs to" the object - if not directly, at least via inheritance.
+<p>
+But it's not always possible (or appropriate) to use inheritance to "reuse a method". 
+You can always use delegation instead and maybe even use a code generator to help creating the forwarder methods, but that's not really a formal or solid way of reusing methods. For example, you need to run the generator again if the proxied class's signature changes.
+<p>
+But is it really a fundamental principle in OOP that the only mechanism for method reuse is inheritance? Is it really forbidden for a language to provide a syntax for defining methods "outside the class definition"?
+<p>
+I don't think so. Most languages just are that way but there could be dozens of different syntaxes for defining a method for different objects simultaneously
+<p>
+And some mechanisms already exist:
+<ul>
+  <li>Aspects let you modify the contents of methods</li>
+  <li>Ruby mixins let you define new methods</li>
+  <li>Doclets and other annotations can do many different things to an object</li>
+  <li>Haskell and other functional languages let you define methods outside the class definition</li>
+</ul>
+<p>
+<b>Conclusion</b>
+<p>
+From the object user's point of view methods do belong to their object, but from the creator's point of view they don't, and language syntaxes shouldn't pretend they do. In procedural languages there was no connection between the data and its operations. In OOP languages there is a connection, but the syntax for defining that connection should be as flexible as possible.
+</div>
+<p class='jroller-origin'>Originally published on 2005-02-21 at <a href='http://www.jroller.com/wipu/entry/methods_belong_to_objects_or'>http://www.jroller.com/wipu/entry/methods_belong_to_objects_or</a> under category Art of programming</p>
+</body></html>

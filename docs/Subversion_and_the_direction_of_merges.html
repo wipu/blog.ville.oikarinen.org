@@ -1,0 +1,26 @@
+<html><head><title>Subversion and the direction of merges</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Subversion and the direction of merges</h1><p>
+An obvious fact (by definition) is that fewer changes are wanted in a stable (release) branch than in an instable (development) branch.
+</p>
+   
+<p>
+Another fact is that changes (most probably bug fixes) made in a stable branch are often wanted in more instable branches, too, if applicable. And most changes in 
+instable branches are not wanted in stable branches.
+</p>
+   
+<p>
+The third fact is that when merging, subversion cannot detect changes that originate from the target branch of the merge (and have been earlier merged in the opposite direction). These changes are shown as conflicts. This probably applies to many other VCS's, too.
+</p>
+   
+<p>
+The implication is that merging is least painful, when each change is first made to the most stable branch it is wanted in. Then it is merged in the direction of
+instability.                           
+</p>
+   
+<p>
+Of course sometimes merging is needed in the wrong direction, too, but it should be avoided as an unwanted exception.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2008-01-30 at <a href='http://www.jroller.com/wipu/entry/subversion_and_the_direction_of'>http://www.jroller.com/wipu/entry/subversion_and_the_direction_of</a> under category SCM & process</p>
+</body></html>

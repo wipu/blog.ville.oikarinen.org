@@ -1,0 +1,110 @@
+<html><head><title>Architecture design as a graph layout problem</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Architecture design as a graph layout problem</h1><h4>(A real story of getting past the layer question)</h4>
+<p>
+In a recent project we had very hard time finding a common language to describe our target architecture design. One common argument was about finding the "correct layer" for each piece of the system.
+</p>
+<h4>So many ways to create layers, so little value</h4>
+<p>
+<a href="Software_architecture_is_human-only_communication.html">Architecture</a> is often visualized as layers. Although layer is a useful concept, it's not enough and can be a very restricting way of thinking about the architecture.
+</p>
+<p>
+A purely layered design is <i>one-dimensional</i> so the full capacity of the paper or screen is not utilized. When forcing things to layers, different people make different choices, and this makes communication more difficult.
+</p>
+<p>
+For example, utilities and services are difficult to place in any layer. They are (literally) orthogonal to the layered design, potentially used from anywhere, while the dependencies between the actual layers are more controlled. In addition, I feel that often the <i>interfaces</i> between layers are forgotten, and <a href="Server-client_is_a_deployment_model,_not_architectural.html">only the implementations are counted as layers</a>.
+</p>
+<h4>It's about modules and dependencies</h4>
+<p>
+Architecture is essentially about dividing a problem into subproblems, or modularization, and managing dependencies between the modules. So, on the abstract level, the big picture of the software is a <a href="Why_modules.html">dependency graph of the modules</a>.
+</p>
+<p>
+One day I realized that the only hard part in design is to identify the subproblems and their dependencies. Divide and conquer. That part wasn't the subject of any arguments. The problem was only about visualizing it. And that, difficult as it seemed for us, is just about applying a <i>graph layout algorithm</i>, and computers are good at that!
+</p>
+<h4>Defining the module graph</h4>
+<p>
+So, we started documenting our modules and dependencies as a <a href="http://www.graphviz.org/">dot</a> script (let's call this simplified and slightly obfuscated example <code>design.dot</code>):
+</p>
+<p><pre>
+digraph G {
+node [shape="record"]
+</pre></p>
+<p>
+The project was a server with a REST interface. So, there would be a REST API implementation, a model for it and a parser that transforms REST requests to model objects:
+</p>
+<p><pre>
+"rest-api-impl" -> "rest-model"
+"rest-api-impl" -> "rest-model-parser"
+"rest-model-parser" -> "rest-model"
+</pre></p>
+Since the REST API and model are higly coupled to external requirements, the REST API implementation should delegate domain logic to a dedicated domain API which has its own model. It uses a transformer module to transform between the two models:
+<p><pre>
+"rest-api-impl" -> "domain-api"
+
+"domain-api" -> "domain-model"
+"rest-api-impl" -> "domain-model"
+
+"rest-api-impl" -> "rest-model-tofrom-domain-model"
+
+"rest-model-tofrom-domain-model" -> "rest-model"
+"rest-model-tofrom-domain-model" -> "domain-model"
+</pre></p>
+The domain API is abstract and it needs an implementation. The implementation also uses the domain model:
+<p><pre>
+"domain-api-impl" -> "domain-api"
+"domain-api-impl" -> "domain-model"
+</pre></p>
+The REST API implementation is responsible for authenticating requests using a service. The domain logic uses the same service for authorization.
+<p><pre>
+"rest-api-impl" -> "auth-service"
+"domain-api-impl" -> "auth-service"
+</pre></p>
+The domain logic also needs some external services. One of them is persistence for the domain model, and the domain logic shields itself from its details with a DAO interface:
+<p><pre>
+"domain-api-impl" -> "ext-services ..."
+
+"domain-api-impl" -> "dao-api"
+"dao-api" -> "domain-model"
+
+"dao-api-impl" -> "dao-api"
+"dao-api-impl" -> "domain-model"
+"dao-api-impl" -> "persistence-service"
+</pre></p>
+The nature of the persistence service calls for yet another model, the DAO model. The DAO implementation uses a transformer to transform between the domain model and the DAO model:
+<p><pre>
+"dao-api-impl" -> "dao-model"
+"dao-api-impl" -> "domain-model-tofrom-dao-model"
+
+"domain-model-tofrom-dao-model" -> "domain-model"
+"domain-model-tofrom-dao-model" -> "dao-model"
+</pre></p>
+That's it, end of graph:
+<p><pre>
+}
+</pre></p>
+<h4>Delegating the visualization</h4>
+<p>
+Then we asked Dottie, our new chief architect, to design the system:
+<pre>$ dot -Tps design.dot -o design.ps && gv design.ps</pre>
+</p>
+<p>
+<img src="design-as-layout.png" alt="graph"/>
+</p>
+<h4>Enjoying the results</h4>
+<p>
+Everybody was immediately satisfied (and stopped laughing at the mouseless graphing tool)!
+</p>
+<p>
+The picture nicely utilizes two dimensions: the layers (REST, domain and DAO) are drawn horizontally, like in a <i>call sequence</i>. The vertical dimension visualizes dependencies: they flow mostly downwards so the most stable modules are on the bottom.
+</p>
+<p>The most important row, the bottom one, is about data. "Good programmers worry about data structures and their relationships" (Torvalds). The middle row consists of service interfaces and model transformers, the "glue". And in the top row we have the actual logic of the layers.
+</p>
+<p>
+The interfaces between layers can be seen very clearly: they are the modules in between that both sides depend on. For example, if a new user interface is needed, it just needs to know how to talk to <code>auth-service</code>, <code>domain-api</code> and <code>domain-model</code>.
+</p>
+<p>
+Another striking discovery is that the whole graph is drawn around the domain model. Good work, Dottie!
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2011-01-28 at <a href='http://www.jroller.com/wipu/entry/design_as_graph_layout_problem'>http://www.jroller.com/wipu/entry/design_as_graph_layout_problem</a> under category Software Architecture</p>
+</body></html>

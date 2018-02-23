@@ -1,0 +1,57 @@
+<html><head><title>Multiple exit points and cyclomatic complexity</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Multiple exit points and cyclomatic complexity</h1><p>
+I don't understand what is the rationale behind always using a single exit point in a function. I can only see the problem: it may increase cyclomatic complexity.
+</p>
+
+<p>
+Compare these two abstract examples and their cyclomatic complexity:
+</p>
+
+<p>
+<b>Single exit point</b>
+<pre>
+  int f(boolean a, boolean b) {
+    // the compiler forces us to have a default value
+    // even if we know it will never be used
+    // (there is always a default value whether it is
+    //  explicit or implicit)
+    int value = DEFAULT;
+    if( a ) {
+      if( b ) {
+        value = A_AND_B;
+      } else {
+        value = A_AND_NOT_B;
+      }
+    } else {
+      value = NOT_A;
+    }
+    return value;
+  }
+</pre>
+
+<b>Multiple exit points</b>
+<pre>
+  int f(boolean a, boolean b) {
+    if( !a ) {
+      return NOT_A;
+    }
+
+    // here we know a is true (otherwise we wouldn't be here)
+    // so we don't need to increase the cyclomatic complexity by
+    // introducing another level of indentation
+    // (without a return statement we could never be so confident):
+    if( b ) {
+      return A_AND_B;
+    }
+
+    // here we know both a and b, no need for DEFAULT:
+    return A_AND_NOT_B;
+  }
+</pre>
+
+
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2005-02-25 at <a href='http://www.jroller.com/wipu/entry/multiple_exit_points_and_cyclomatic1'>http://www.jroller.com/wipu/entry/multiple_exit_points_and_cyclomatic1</a> under category Java</p>
+</body></html>

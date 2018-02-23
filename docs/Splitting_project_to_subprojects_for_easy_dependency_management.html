@@ -1,0 +1,19 @@
+<html><head><title>Splitting project to subprojects for easy dependency management</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Splitting project to subprojects for easy dependency management</h1><p>
+I have found splitting a project to many subprojects an efficient way to make it difficult for coworkers to break the architecture by accidentally creating unwanted dependencies.
+</p>
+<p>
+If a programmer tries to create an illegal dependency, Eclipse won't even suggest importing the depended class, because it doesn't belong to the classpath.
+</p>
+<p>
+The untrivial part of this strategy are (unit) tests and their utilitity classes (for example mocks). They often need dependencies that are not wanted in the production code (see <a href="http://jroller.com/page/wipu?entry=easy_testing_with_embedded_openejb">my blog entry about hsql and openejb</a> for example).
+</p>
+<p>
+The solution is to create subprojects <code>theproduct-tests</code> and <code>theproduct-testutils</code> and add all needed projects and libraries to their classpaths. Now the source directory for unit tests of any module <code>x</code> is not <code>theproduct-x/tests</code> but <code>theproduct-tests/unittests</code>.
+</p>
+<p>
+I apply this same subproject principle to 3rd party utilities (both production and test). For example database, xml and xunit libraries all have subprojects of their own. This way I have fine-grained control over dependencies to them, too.
+</p></div>
+<p class='jroller-origin'>Originally published on 2005-12-14 at <a href='http://www.jroller.com/wipu/entry/splitting_project_to_subprojects_for'>http://www.jroller.com/wipu/entry/splitting_project_to_subprojects_for</a> under category Eclipse</p>
+</body></html>

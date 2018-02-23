@@ -1,0 +1,33 @@
+<html><head><title>Fluent events</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Fluent events</h1><p>
+A few weeks ago me and a colleague were writing a tool that reads a data file (an abstract database description) and executes some sql insertion code for each part of the file. As eager dogfood consumers we chose to use <code>ngr</code> as the concrete syntax for the file.
+</p>
+
+<p>
+We anticipated the data file to be very large, so we got ourselves a story telling that we should be able to stream selected parts of it while building elements from others.
+</p>
+
+<p>
+So I modified the <i>ngrease</i> parser to produce parse events and the element builder to consume them.
+</p>
+
+<p>
+Next I started to make the interface easy to use from the database tool. I wanted to avoid the most difficult and laborous part of stream handling, namely <i>state management</i>. This, combined with the need to delegate parts of the stream
+to the existing element builder, lead to a solution where every listener method returns a listener that will handle the next event.
+</p>
+
+<p>
+After some more coding I even split the listener interface into several interfaces, roughly one for each production rule of the grammar.
+</p>
+
+<p>
+At that point I experienced deja vu: <i>a set of interfaces whose methods all return an interface from the set... I've written a fluent interface!</i>
+</p>
+
+<p>
+Usually fluent interfaces are written for human users, but this had been written for other programs. Well, of course I had to try the interface with Eclipse and its ctrl-space, and while there are better examples of fluent interfaces around, it certainly felt fluent enough for producing a stream of elements by hand.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2008-10-28 at <a href='http://www.jroller.com/wipu/entry/fluent_events'>http://www.jroller.com/wipu/entry/fluent_events</a> under category Java</p>
+</body></html>

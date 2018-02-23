@@ -1,0 +1,49 @@
+<html><head><title>Startup scripts without a PRODUCT_HOME variable</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Startup scripts without a PRODUCT_HOME variable</h1><p>
+Another old and simple subject I should have posted a long time ago:
+</p>
+
+<p>
+A typical command line tool implemented in Java
+contains a startup script (actually many of them - it's <i>run everywhere</i> only once you get it running...) for configuring and starting a JVM for the tool.
+</p>
+
+<p>
+Some tools require a <tt>PRODUCT_HOME</tt> environment variable to be able to find the classes and other files of the tool.
+</p>
+
+<p>
+This isn't necessary, the script can detect its own location and deduce the tool location from it.
+</p>
+
+<p>
+Assuming the startup script is under a subdirectory of <tt>PRODUCT_HOME</tt>, for example <tt>bin</tt>, <tt>PRODUCT_HOME</tt> can be deduced like this:
+</p>
+
+<p>
+First the bash version:
+</p>
+
+<p>
+<pre>
+SCRIPT_HOME=$(dirname "$0")
+PRODUCT_HOME="$SCRIPT_HOME/.."
+</pre>
+</p>
+
+<p>
+And the Windows version, as documented by
+<a href="http://weblogs.asp.net/whaggard/archive/2005/01/28/get-directory-path-of-an-executing-batch-file.aspx">puzzlehacker</a>, among others;
+I don't know which Windows versions support this (and luckily it's not really my problem):
+</p>
+
+<p>
+<pre>
+set SCRIPT_HOME=%~dp0
+set PRODUCT_HOME=%SCRIPT_HOME%\..
+</pre>
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2008-02-05 at <a href='http://www.jroller.com/wipu/entry/startup_scripts_without_a_home'>http://www.jroller.com/wipu/entry/startup_scripts_without_a_home</a> under category Scripting</p>
+</body></html>

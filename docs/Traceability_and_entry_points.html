@@ -1,0 +1,24 @@
+<html><head><title>Traceability and entry points</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Traceability and entry points</h1><p>
+<i>Traceability</i> is a kind of <a href="Walking_on_red_carpet.html">red carpet</a> (or maybe green?) for learning to understand code. Ideally you can trace the code <i>statically</i>, by reading and ctrl-clicking calls. Polymorphism reduces traceability, but when used wisely, it's a very acceptable compromise. Inheritance also reduces traceability, but it's also difficult to use wisely :)
+</p>
+
+<p>
+The second best form of traceability is <i>dynamic</i>: when debugging, you can trace even polymorphic method calls.
+</p>
+
+<p>
+But, to be able to set break points for debugging, you need to know the <i>entry points</i>. The problem with typical enterprise code is that it has a lot of them, and you need to dig through a pile of XMLs and specifications to find them all. Even if you happen to have the container sources at hand, many calls are hidden behind reflection.
+</p>
+
+<p>
+Tracing enterprise code statically is virtually impossible, but you can at least <i>list all the entry points</i> in one place. Create a documentation module that depends on all other modules and write an entry point document in Java. Just print the entry point classes/resources to stdout or something, and maybe even put some explanatory text in between. This file will be the only entry point for static tracing, verified by the compiler.
+</p>
+
+<p>
+The long-term solution is of course to reduce the number of entry points. You don't have to use all those bells and whistles: just add one Plain Old Method Call instead of declaring an interceptor, for example. No more code needed (in fact, Java is even less noisy than XML), but a huge improvement on traceability.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2010-09-09 at <a href='http://www.jroller.com/wipu/entry/traceability_and_entry_points'>http://www.jroller.com/wipu/entry/traceability_and_entry_points</a> under category Java</p>
+</body></html>

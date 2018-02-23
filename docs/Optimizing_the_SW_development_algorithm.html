@@ -1,0 +1,76 @@
+<html><head><title>Optimizing the SW development algorithm</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Optimizing the SW development algorithm</h1><p>
+<i>Warning: this article contains simplifications so read on with care :)</i>
+</p>
+
+<p>
+This is a sketch of an algorithm for the test driven sw development process:
+</p>
+<pre>
+<code>
+while not client.isHappy()
+  specification = client.writeSpecification()
+  if specification.isExecutable()
+    executableSpecification = specification
+  else
+    executableSpecification =  programmer.formalize(specification)
+    // executableSpecification must be readable by client
+    client.verify(executableSpecification)
+
+  if productionSystem.canExecute(executableSpecification)
+    productionSystem.add(executableSpecification)
+  else
+    allTests.add(executableSpecification)
+
+    while not testFramework.doAllTestsPass(allTests)
+      productionSystem = programmer.code(productionSystem, allTests)
+</code>
+</pre>
+
+<p>
+How could this process be optimized? Here are some suggestions, from the easiest to the most difficult:
+</p>
+
+<p>
+Introduce an executable language for expressing specifications by example. Now the programmer isn't needed to write the specification, and the client doesn't need to verify his/her own creation:
+</p>
+
+<pre>
+<code>
+while not client.isHappy()
+  executableSpecification = client.writeSpecification()
+
+  if productionSystem.canExecute(executableSpecification)
+    productionSystem.add(executableSpecification)
+  else
+    allTests.add(executableSpecification)
+
+    while not testFramework.doAllTestsPass(allTests)
+      productionSystem = programmer.code(productionSystem, allTests)
+</code>
+</pre>
+
+<p>
+If the problem happens to be one of those that are difficult to specify formally, this is the best we can do. Otherwise, we have a formal and executable 
+specification, so the production system can use the specification as 
+such:
+</p>
+
+<pre>
+<code>
+while not client.isHappy()
+  executableSpecification = client.writeSpecification()
+  productionSystem.add(executableSpecification)
+</code>
+</pre>
+
+<p>
+Whoops:
+</p>
+
+<p>
+<code>Warning: unused variable: programmer</code>
+</p></div>
+<p class='jroller-origin'>Originally published on 2006-11-03 at <a href='http://www.jroller.com/wipu/entry/optimizing_the_sw_development_algorithm'>http://www.jroller.com/wipu/entry/optimizing_the_sw_development_algorithm</a> under category SCM & process</p>
+</body></html>

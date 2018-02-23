@@ -1,0 +1,24 @@
+<html><head><title>Dependency visibility</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Dependency visibility</h1><p>
+<i>Dependency analysis war story #3</i>
+</p>
+
+<p>
+After <a href="Automated_analysis,_hand-picked_data.html">analysing</a> the essential class-level dependencies we were puzzled: the dependencies seemed ok! What was wrong with our code if not dependencies?!
+</p>
+
+<p>
+Further study revealed that the problems were caused by <i>indirect</i> dependencies, especially <i>inheritance</i>.
+</p>
+
+<p>
+We had identified a new concept: <i>dependency visibility</i>. (At least I am not aware of any tool that analyzes this.) If class A <i>publicly</i> depends on class B by referring to it in its public signature (<code>javap -public</code>), then all users of A are forced to depend on B.
+</p>
+
+<p>
+We upgraded our script to draw a bold arrow for public dependencies, and this immediately revealed the dependencies that caused our problems. An abstraction is useless (and just adds complexity) if it fails to hide its own dependencies.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2011-04-29 at <a href='http://www.jroller.com/wipu/entry/dependency_visibility'>http://www.jroller.com/wipu/entry/dependency_visibility</a> under category Software Architecture</p>
+</body></html>

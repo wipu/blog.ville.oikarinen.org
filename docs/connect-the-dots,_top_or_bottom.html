@@ -1,0 +1,70 @@
+<html><head><title>connect-the-dots, top or bottom</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>connect-the-dots, top or bottom</h1><p>
+I have never really decided whether I like <i>top-down</i> or <i>bottom-up</i> more.
+<a href="Coding_by_need.html">Coding by need</a> (coding by intention and TDD) seem to point at top-down. On the other hand, I have been most productive with <i>ngrease</i> by
+<a href="http://doi.acm.org/10.1145/1297846.1297921">extracting abstractions</a> from concrete examples, bottom-up.
+</p>
+
+<p>
+Maybe the two approaches have more in common than at least I have thought. I think they are both special cases of a more general principle.
+</p>
+
+<p>
+Below is a graph that visualizes the idea. At the top (the "x" on the first line) is a high-level specification. The task is to find a low-level implementation (the "x" on the last line) with a path to the specification so that the implementation satisfies the specification:
+</p>
+
+<p>
+<pre>
+   . . . x . . . . . .
+
+   . . . . . . . . . .
+
+   . . . . . . . . . .
+
+   . . . . . . . . . .
+
+   . . . . . . . . . .
+
+   . . . . . . . . . .
+
+   . . . . . . x . . .
+</pre>
+</p>
+
+<p>
+Sometimes all we have is high-level constraints, and we don't know or care about low-level details. In that case (or rather, during it) top-down might be the natural way to solve the problem.
+</p>
+
+<p>
+On the other hand, if we have low-level constraints, like reusable modules we want to use or some technical legacy requirements, it might be feasible to do bottom-up.
+</p>
+
+<p>
+The underlying principle is to <i>connect the dots</i>, in whatever order feels most appropriate, be it top-down or bottom-up or some combination of them. Maybe even connect-somewhere-in-between if we happen to have some framework-level constraints, for example.
+</p>
+
+<p>
+The second diagram shows the problem after both special cases of this principle have been applied for a while and we have a much smaller subproblem to solve:
+</p>
+
+<p>
+<pre>
+   . . . x . . . . . .
+         |
+   . . . x . . . . . .
+          \
+   . . . . x . . . . .
+
+   . . . . . . . . . .
+
+   . . . . . x . . . .
+              \
+   . . . . . . x . . .
+               |
+   . . . . . . x . . .
+</pre>
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2008-10-21 at <a href='http://www.jroller.com/wipu/entry/connect_the_dots_top_or'>http://www.jroller.com/wipu/entry/connect_the_dots_top_or</a> under category Art of programming</p>
+</body></html>

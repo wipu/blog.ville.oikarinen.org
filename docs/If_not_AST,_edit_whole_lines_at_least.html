@@ -1,0 +1,24 @@
+<html><head><title>If not AST, edit whole lines at least</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>If not AST, edit whole lines at least</h1><p>
+The more I learn Eclipse, the less I code by processing raw text. More often than not <code>ctrl-space</code> or <code>ctrl-1</code> offer just the AST manipulation I need, if I just remember to stop typing and use them.
+</p>
+
+<p>
+But there is another level, too, between AST and character: when editing raw text, I edit <i>whole lines</i> instead of individual characters whenever possible.
+</p>
+
+<p>
+For example cutting and pasting whole lines can be done with very few keystrokes: just put the cursor at column 0 and press <code>shift-down</code> to select some lines before cutting them. Then move the cursor up or down before pasting, again at column 0. Cutting partial lines needs more keystrokes and requires extra formatting. I've seen people do a lot of ad-hoc adjusting (every time a different variation!) after each paste.
+</p>
+
+<p>
+Line-oriented editing is good for version control, too, because most diff tools compare whole lines. This is another reason why it's good to add a comma after the last <code>enum</code> constant: this way adding a new constant is only a one-line diff, since there is no need to modify the previous last line.
+</p>
+
+<p>
+This is also one more reason to add a linebreak after the last line!
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2009-06-30 at <a href='http://www.jroller.com/wipu/entry/if_not_ast_edit_whole'>http://www.jroller.com/wipu/entry/if_not_ast_edit_whole</a> under category Eclipse</p>
+</body></html>

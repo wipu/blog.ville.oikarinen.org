@@ -1,0 +1,51 @@
+body {
+	background: white;
+	font-family: verdana, arial, sans-serif;
+	font-size: 1em;
+	margin-left: 10em;
+	width: 50em;
+}
+
+div.article {
+	background: #FAFFFA;
+	margin: 0.5em;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-style: solid;
+	border-width: thin;
+	border-color: MidnightBlue;
+}
+
+h1 {
+	text-decoration: underline;
+	color: MidnightBlue;
+	padding-left: 1em;
+	margin-top: 2px;
+	background: LightBlue; /* for old browsers */
+	background: linear-gradient(LightBlue, #FAFFFA);
+}
+
+p {
+	text-align: justify;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+p.jroller-origin {
+	font-style:italic;
+	font-size: smaller;
+	text-align: center;
+	padding-top: 1em;
+	color: DarkGray;
+}
+
+p.jroller-origin > a {
+	color: DarkGray;
+}
+
+img {
+	border-style: solid;
+	border-width: thin;
+	border-color: MidnightBlue;
+	box-shadow: 6px 6px 5px grey;
+}

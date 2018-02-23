@@ -1,0 +1,16 @@
+<html><head><title>Test the zero case first</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='article'>
+<h1>Test the zero case first</h1><p>
+When starting a new "unit of test" (method, interface, module, ...), the first test to write should define its behaviour in the "zero case" i.e. when zero/null/empty goes in, or out.
+</p>
+
+<p>
+First, the zero case is often the easiest to implement. Just return "zero", throw an exception or something like that. And because the feature itself is easy, it is effective at <i>driving</i> the creation of the new unit, satisfying dependencies in the test environment and otherwise getting started.
+</p>
+
+<p>
+Second, the zero case is often a nasty <i>boundary case</i> that gets overlooked without the test. Sometimes (often with collections) it is automatically OK, but too often it is not.
+</p>
+</div>
+<p class='jroller-origin'>Originally published on 2009-08-27 at <a href='http://www.jroller.com/wipu/entry/test_the_zero_case_first'>http://www.jroller.com/wipu/entry/test_the_zero_case_first</a> under category Art of programming</p>
+</body></html>
