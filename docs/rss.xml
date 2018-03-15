@@ -1,4 +1,8 @@
-<Rss xmlns=""><version>2.0</version><channel><title>Mapping thoughts to language</title><link>http://blog.ville.oikarinen.org</link><description>Ville Oikarinen blogging (mostly) about programming since 2005</description><language>en-us</language><copyright>(c) Ville Oikarinen 2018</copyright><lastBuildDate>Thu Mar 15 07:12:02 EET 2018</lastBuildDate><generator>Some simple custom java code</generator><item><guid zdef-98154716:isPermaLink="true">http://blog.ville.oikarinen.org/Dependency_visibility.html</guid><title>Dependency visibility</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Dependency_visibility.html</link><pubDate>Fri, 29 Apr 2011 09:01:13 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.jroller.com/roller-ui/styles/rss.xsl" media="screen"?><rss version="2.0" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom" >
+<Rss xmlns=""><version>2.0</version><channel><title>Mapping thoughts to language</title><link>http://blog.ville.oikarinen.org</link><description>Ville Oikarinen blogging (mostly) about programming since 2005</description><language>en-us</language><copyright>(c) Ville Oikarinen 2018</copyright><lastBuildDate>Thu Mar 15 07:19:24 EET 2018</lastBuildDate><generator>Some simple custom java code</generator><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Dependency_visibility.html</guid><title>Dependency visibility</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Dependency_visibility.html</link><pubDate>Fri, 29 Apr 2011 09:01:13 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
 &lt;i&gt;Dependency analysis war story #3&lt;/i&gt;
 &lt;/p&gt;
 
@@ -17,7 +21,7 @@ We had identified a new concept: &lt;i&gt;dependency visibility&lt;/i&gt;. (At l
 &lt;p&gt;
 We upgraded our script to draw a bold arrow for public dependencies, and this immediately revealed the dependencies that caused our problems. An abstraction is useless (and just adds complexity) if it fails to hide its own dependencies.
 &lt;/p&gt;
-</description></item><item><guid zdef1819758247:isPermaLink="true">http://blog.ville.oikarinen.org/Automated_analysis,_hand-picked_data.html</guid><title>Automated analysis, hand-picked data</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Automated_analysis,_hand-picked_data.html</link><pubDate>Fri, 29 Apr 2011 08:53:16 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Automated_analysis,_hand-picked_data.html</guid><title>Automated analysis, hand-picked data</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Automated_analysis,_hand-picked_data.html</link><pubDate>Fri, 29 Apr 2011 08:53:16 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
 &lt;i&gt;Dependency analysis war story #2&lt;/i&gt;
 &lt;/p&gt;
 
@@ -48,7 +52,7 @@ So we combined the best parts of manual and automatic: We hand-picked the classe
 &lt;p&gt;
 The result was as to-the-point as a hand-drawn picture but reliable and repeatable.
 &lt;/p&gt;
-</description></item><item><guid zdef1618820395:isPermaLink="true">http://blog.ville.oikarinen.org/Iteration_and_clicks_correlation.html</guid><title>Iteration and clicks correlation</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Iteration_and_clicks_correlation.html</link><pubDate>Tue, 19 Apr 2011 08:41:42 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Iteration_and_clicks_correlation.html</guid><title>Iteration and clicks correlation</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Iteration_and_clicks_correlation.html</link><pubDate>Tue, 19 Apr 2011 08:41:42 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 The more frequently a feature is needed, the more valuable it is. And the more valuable a feature, the earlier it should be implemented.
 &lt;/p&gt;
 
@@ -63,7 +67,7 @@ Therefore there should be a positive correlation between click count and iterati
 &lt;p&gt;
 If only it was possible to calculate this from automated tests and the backlog...
 &lt;/p&gt;
-</description></item><item><guid zdef2032222181:isPermaLink="true">http://blog.ville.oikarinen.org/Architecture_design_as_a_graph_layout_problem.html</guid><title>Architecture design as a graph layout problem</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Architecture_design_as_a_graph_layout_problem.html</link><pubDate>Fri, 28 Jan 2011 03:34:56 -0500</pubDate><category>Software Architecture</category><description>&lt;h4&gt;(A real story of getting past the layer question)&lt;/h4&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Architecture_design_as_a_graph_layout_problem.html</guid><title>Architecture design as a graph layout problem</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Architecture_design_as_a_graph_layout_problem.html</link><pubDate>Fri, 28 Jan 2011 03:34:56 -0500</pubDate><category>Software Architecture</category><description>&lt;h4&gt;(A real story of getting past the layer question)&lt;/h4&gt;
 &lt;p&gt;
 In a recent project we had very hard time finding a common language to describe our target architecture design. One common argument was about finding the "correct layer" for each piece of the system.
 &lt;/p&gt;
@@ -168,7 +172,7 @@ The interfaces between layers can be seen very clearly: they are the modules in 
 &lt;p&gt;
 Another striking discovery is that the whole graph is drawn around the domain model. Good work, Dottie!
 &lt;/p&gt;
-</description></item><item><guid zdef1137253733:isPermaLink="true">http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html</guid><title>Software architecture is human-only communication</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html</link><pubDate>Wed, 26 Jan 2011 10:28:00 -0500</pubDate><category>Software Architecture</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html</guid><title>Software architecture is human-only communication</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html</link><pubDate>Wed, 26 Jan 2011 10:28:00 -0500</pubDate><category>Software Architecture</category><description>&lt;p&gt;
 My definition for software architecture is &lt;i&gt;anything about the code programmers talk with each other using something else than the code&lt;/i&gt;.
 &lt;/p&gt;
 
@@ -179,7 +183,7 @@ Most often natural language and graphs. Or hand-waving with or without mouse.
 &lt;p&gt;
 Some architecture is needed, but by this definition, the less the better. Maybe some of today's architectures are just keywords in a future language?
 &lt;/p&gt;
-</description></item><item><guid zdef1379961543:isPermaLink="true">http://blog.ville.oikarinen.org/Why_modules.html</guid><title>Why modules</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Why_modules.html</link><pubDate>Tue, 14 Sep 2010 08:55:53 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Why_modules.html</guid><title>Why modules</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Why_modules.html</link><pubDate>Tue, 14 Sep 2010 08:55:53 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
 &lt;i&gt;Why split a project into modules?&lt;/i&gt;
 To organize the code? Not necessarily a bad idea, but this doesn't necessarily mean modularization: just use directories to create any of the endless taxonomies possible. Personally I don't really need this: I open the &lt;a href="http://www.jroller.com/wipu/entry/traceability_and_entry_points"&gt;entry points&lt;/a&gt; (often tests) directly by class name, and other code can be found by navigating, &lt;a href="http://www.jroller.com/wipu/entry/coding_by_need"&gt;by need&lt;/a&gt;.
 &lt;/p&gt;
@@ -215,7 +219,7 @@ So, &lt;i&gt;a module is also a unit of reuse&lt;/i&gt;, and that is in my opini
 &lt;p&gt;
 Now, lets take a new look at the first, most superficial reason for modularization: code organization. All taxonomies organize code, but the one based on usable, and ultimately reusable functionality is of any real value. For example, a module may contain many "kinds" of code (a service provides certain functionality together with related data and exceptions). The amount of code can vary very much between modules. If there is such a thing as too small a module, just fix it by adding bloat... right?
 &lt;/p&gt;
-</description></item><item><guid zdef1365870015:isPermaLink="true">http://blog.ville.oikarinen.org/Traceability_and_entry_points.html</guid><title>Traceability and entry points</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Traceability_and_entry_points.html</link><pubDate>Thu, 9 Sep 2010 09:18:18 -0400</pubDate><category>Java</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Traceability_and_entry_points.html</guid><title>Traceability and entry points</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Traceability_and_entry_points.html</link><pubDate>Thu, 9 Sep 2010 09:18:18 -0400</pubDate><category>Java</category><description>&lt;p&gt;
 &lt;i&gt;Traceability&lt;/i&gt; is a kind of &lt;a href="http://www.jroller.com/wipu/entry/walking_on_red_carpet"&gt;red carpet&lt;/a&gt; (or maybe green?) for learning to understand code. Ideally you can trace the code &lt;i&gt;statically&lt;/i&gt;, by reading and ctrl-clicking calls. Polymorphism reduces traceability, but when used wisely, it's a very acceptable compromise. Inheritance also reduces traceability, but it's also difficult to use wisely :)
 &lt;/p&gt;
 
@@ -234,7 +238,7 @@ Tracing enterprise code statically is virtually impossible, but you can at least
 &lt;p&gt;
 The long-term solution is of course to reduce the number of entry points. You don't have to use all those bells and whistles: just add one Plain Old Method Call instead of declaring an interceptor, for example. No more code needed (in fact, Java is even less noisy than XML), but a huge improvement on traceability.
 &lt;/p&gt;
-</description></item><item><guid zdef429761553:isPermaLink="true">http://blog.ville.oikarinen.org/Walking_on_red_carpet.html</guid><title>Walking on red carpet</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Walking_on_red_carpet.html</link><pubDate>Fri, 7 May 2010 09:09:05 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Walking_on_red_carpet.html</guid><title>Walking on red carpet</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Walking_on_red_carpet.html</link><pubDate>Fri, 7 May 2010 09:09:05 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 I like to think of &lt;a href="http://www.jroller.com/wipu/entry/coding_by_need"&gt;coding by need&lt;/a&gt; as &lt;i&gt;walking on a red carpet&lt;/i&gt; from a problem to its solution. A friendly test failure or compilation error message nicely points to the next problem that needs the programmer's attention.
 &lt;/p&gt;
 
@@ -249,7 +253,7 @@ One way to measure code design is to count the number of gaps in the carpet when
 &lt;p&gt;
 Premature green is another root of all evil.
 &lt;/p&gt;
-</description></item><item><guid zdef-160386886:isPermaLink="true">http://blog.ville.oikarinen.org/A_new_frog_in_a_new_kettle.html</guid><title>A new frog in a new kettle</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/A_new_frog_in_a_new_kettle.html</link><pubDate>Mon, 26 Apr 2010 09:49:39 -0400</pubDate><category>General</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/A_new_frog_in_a_new_kettle.html</guid><title>A new frog in a new kettle</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/A_new_frog_in_a_new_kettle.html</link><pubDate>Mon, 26 Apr 2010 09:49:39 -0400</pubDate><category>General</category><description>&lt;p&gt;
 In December I quit the best and longest job I've had (so far). And I haven't even regretted it :)
 &lt;/p&gt;
 
@@ -272,7 +276,7 @@ I would have had more to give to the previous project, and I would have learned 
 &lt;p&gt;
 It is said that frogs can be boiled to death because they don't detect the slow increase of temperature. But a team of frogs can save itself if it invites a fresh member in the water from time to time.
 &lt;/p&gt;
-</description></item><item><guid zdef1924630717:isPermaLink="true">http://blog.ville.oikarinen.org/Test_the_zero_case_first.html</guid><title>Test the zero case first</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Test_the_zero_case_first.html</link><pubDate>Thu, 27 Aug 2009 11:06:34 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Test_the_zero_case_first.html</guid><title>Test the zero case first</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Test_the_zero_case_first.html</link><pubDate>Thu, 27 Aug 2009 11:06:34 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 When starting a new "unit of test" (method, interface, module, ...), the first test to write should define its behaviour in the "zero case" i.e. when zero/null/empty goes in, or out.
 &lt;/p&gt;
 
@@ -283,7 +287,7 @@ First, the zero case is often the easiest to implement. Just return "zero", thro
 &lt;p&gt;
 Second, the zero case is often a nasty &lt;i&gt;boundary case&lt;/i&gt; that gets overlooked without the test. Sometimes (often with collections) it is automatically OK, but too often it is not.
 &lt;/p&gt;
-</description></item><item><guid zdef2036095247:isPermaLink="true">http://blog.ville.oikarinen.org/Post-vacation_cleanup.html</guid><title>Post-vacation cleanup</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Post-vacation_cleanup.html</link><pubDate>Thu, 27 Aug 2009 10:33:17 -0400</pubDate><category>General</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Post-vacation_cleanup.html</guid><title>Post-vacation cleanup</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Post-vacation_cleanup.html</link><pubDate>Thu, 27 Aug 2009 10:33:17 -0400</pubDate><category>General</category><description>&lt;p&gt;
 This week we finally got sprints running again, now that the whole team has returned and recovered from the vacation.
 &lt;/p&gt;
 
@@ -302,7 +306,7 @@ This year I found a good way to relearn programming and be productive at the sam
 &lt;p&gt;
 I started from the &lt;i&gt;bottom...&lt;/i&gt;, with simple refactorings, and gradually advanced &lt;i&gt;...up&lt;/i&gt; into sketching a new framework. I was cured all right...
 &lt;/p&gt;
-</description></item><item><guid zdef-2094876365:isPermaLink="true">http://blog.ville.oikarinen.org/Blueberry_bonus.html</guid><title>Blueberry bonus</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Blueberry_bonus.html</link><pubDate>Thu, 20 Aug 2009 08:05:00 -0400</pubDate><category>General</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Blueberry_bonus.html</guid><title>Blueberry bonus</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Blueberry_bonus.html</link><pubDate>Thu, 20 Aug 2009 08:05:00 -0400</pubDate><category>General</category><description>&lt;p&gt;
 This was a good year for blueberries. The best spot, the biggest loot and the strongest symptoms of &lt;i&gt;mania&lt;/i&gt; ever &lt;b&gt;&lt;code&gt;8D&lt;/code&gt;&lt;/b&gt;
 &lt;/p&gt;
 
@@ -322,7 +326,7 @@ In my own programming projects, after each session I try to leave some well-defi
 &lt;p&gt;
 It's tempting to start requiring the things I know I will do anyway. But that would spoil the &lt;i&gt;fun&lt;/i&gt; and I'd start buying blueberries and feel guilty.
 &lt;/p&gt;
-</description></item><item><guid zdef-813992236:isPermaLink="true">http://blog.ville.oikarinen.org/Bottom-up_to_TDD.html</guid><title>Bottom-up to TDD</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Bottom-up_to_TDD.html</link><pubDate>Tue, 30 Jun 2009 01:48:38 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Bottom-up_to_TDD.html</guid><title>Bottom-up to TDD</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Bottom-up_to_TDD.html</link><pubDate>Tue, 30 Jun 2009 01:48:38 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 In my current client project we have found the following a good way to add new behaviour to our web application.
 &lt;/p&gt;
 
@@ -336,7 +340,7 @@ When we have manually verified that this one special case looks good, we can wri
 
 &lt;p&gt;Now, with a working test framework, the the rest is plain old TDD: we just write one test at a time to show that some part of the html output needs to be parameterized.
 &lt;/p&gt;
-</description></item><item><guid zdef59396121:isPermaLink="true">http://blog.ville.oikarinen.org/If_not_AST,_edit_whole_lines_at_least.html</guid><title>If not AST, edit whole lines at least</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/If_not_AST,_edit_whole_lines_at_least.html</link><pubDate>Tue, 30 Jun 2009 01:45:43 -0400</pubDate><category>Eclipse</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/If_not_AST,_edit_whole_lines_at_least.html</guid><title>If not AST, edit whole lines at least</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/If_not_AST,_edit_whole_lines_at_least.html</link><pubDate>Tue, 30 Jun 2009 01:45:43 -0400</pubDate><category>Eclipse</category><description>&lt;p&gt;
 The more I learn Eclipse, the less I code by processing raw text. More often than not &lt;code&gt;ctrl-space&lt;/code&gt; or &lt;code&gt;ctrl-1&lt;/code&gt; offer just the AST manipulation I need, if I just remember to stop typing and use them.
 &lt;/p&gt;
 
@@ -355,13 +359,13 @@ Line-oriented editing is good for version control, too, because most diff tools 
 &lt;p&gt;
 This is also one more reason to add a linebreak after the last line!
 &lt;/p&gt;
-</description></item><item><guid zdef1117283894:isPermaLink="true">http://blog.ville.oikarinen.org/Nested_fluent_builder.html</guid><title>Nested fluent builder</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Nested_fluent_builder.html</link><pubDate>Wed, 31 Dec 2008 09:10:32 -0500</pubDate><category>Java</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Nested_fluent_builder.html</guid><title>Nested fluent builder</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Nested_fluent_builder.html</link><pubDate>Wed, 31 Dec 2008 09:10:32 -0500</pubDate><category>Java</category><description>&lt;p&gt;
 Today I published a little article on the Sysart developer site,
 &lt;a href="http://web.sysart.fi/developer/articles:nested_fluent_builder"&gt;Nested fluent builder&lt;/a&gt;,
 showing how &lt;a href="http://www.jroller.com/wipu/entry/fluent_events"&gt;fluent events&lt;/a&gt; that form
 nested sentences open surprising technological possibilities, as well as being pleasant to the eye.
 &lt;/p&gt;
-</description></item><item><guid zdef144881719:isPermaLink="true">http://blog.ville.oikarinen.org/TODO_test_and_implement.html</guid><title>TODO test and implement</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/TODO_test_and_implement.html</link><pubDate>Tue, 2 Dec 2008 06:18:17 -0500</pubDate><category>Java</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/TODO_test_and_implement.html</guid><title>TODO test and implement</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/TODO_test_and_implement.html</link><pubDate>Tue, 2 Dec 2008 06:18:17 -0500</pubDate><category>Java</category><description>&lt;p&gt;
 For a while I have used the following template for auto-generated method stubs in Eclipse:
 &lt;/p&gt;
 &lt;p&gt;
@@ -376,7 +380,7 @@ The first line makes sure the stub is shown on the problems tab, making it more 
 &lt;p&gt;
 The second line relies on the &lt;i&gt;courage&lt;/i&gt; TDD gives. A runtime exception is really what I want before the new method is really &lt;i&gt;done&lt;/i&gt;.
 &lt;/p&gt;
-</description></item><item><guid zdef-407774465:isPermaLink="true">http://blog.ville.oikarinen.org/Fluent_events.html</guid><title>Fluent events</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Fluent_events.html</link><pubDate>Tue, 28 Oct 2008 08:56:54 -0400</pubDate><category>Java</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Fluent_events.html</guid><title>Fluent events</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Fluent_events.html</link><pubDate>Tue, 28 Oct 2008 08:56:54 -0400</pubDate><category>Java</category><description>&lt;p&gt;
 A few weeks ago me and a colleague were writing a tool that reads a data file (an abstract database description) and executes some sql insertion code for each part of the file. As eager dogfood consumers we chose to use &lt;code&gt;ngr&lt;/code&gt; as the concrete syntax for the file.
 &lt;/p&gt;
 
@@ -404,7 +408,7 @@ At that point I experienced deja vu: &lt;i&gt;a set of interfaces whose methods 
 &lt;p&gt;
 Usually fluent interfaces are written for human users, but this had been written for other programs. Well, of course I had to try the interface with Eclipse and its ctrl-space, and while there are better examples of fluent interfaces around, it certainly felt fluent enough for producing a stream of elements by hand.
 &lt;/p&gt;
-</description></item><item><guid zdef-1513294075:isPermaLink="true">http://blog.ville.oikarinen.org/Entity,_valuetype_and_equals.html</guid><title>Entity, valuetype and equals</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Entity,_valuetype_and_equals.html</link><pubDate>Fri, 24 Oct 2008 04:11:30 -0400</pubDate><category>Java</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Entity,_valuetype_and_equals.html</guid><title>Entity, valuetype and equals</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Entity,_valuetype_and_equals.html</link><pubDate>Fri, 24 Oct 2008 04:11:30 -0400</pubDate><category>Java</category><description>&lt;p&gt;
 There are lots of different classes of equality, but the distinction between &lt;i&gt;entities&lt;/i&gt; and &lt;i&gt;valuetypes&lt;/i&gt; is probably the most important aspect, since it is commonly needed and I have witnessed some misunderstanding with it.
 &lt;/p&gt;
 
@@ -419,7 +423,7 @@ An entity is, by definition, identifiable by its identity. So it's an error to i
 &lt;p&gt;
 A valuetype, on the other hand, is identifiable by all its observable attributes. So it's an error to omit any of the attributes in the &lt;code&gt;equals&lt;/code&gt; method.
 &lt;/p&gt;
-</description></item><item><guid zdef-56219266:isPermaLink="true">http://blog.ville.oikarinen.org/connect-the-dots,_top_or_bottom.html</guid><title>connect-the-dots, top or bottom</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/connect-the-dots,_top_or_bottom.html</link><pubDate>Tue, 21 Oct 2008 07:19:12 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/connect-the-dots,_top_or_bottom.html</guid><title>connect-the-dots, top or bottom</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/connect-the-dots,_top_or_bottom.html</link><pubDate>Tue, 21 Oct 2008 07:19:12 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 I have never really decided whether I like &lt;i&gt;top-down&lt;/i&gt; or &lt;i&gt;bottom-up&lt;/i&gt; more.
 &lt;a href="http://www.jroller.com/wipu/entry/coding_by_need"&gt;Coding by need&lt;/a&gt; (coding by intention and TDD) seem to point at top-down. On the other hand, I have been most productive with &lt;i&gt;ngrease&lt;/i&gt; by
 &lt;a href="http://doi.acm.org/10.1145/1297846.1297921"&gt;extracting abstractions&lt;/a&gt; from concrete examples, bottom-up.
@@ -484,7 +488,7 @@ The second diagram shows the problem after both special cases of this principle 
    . . . . . . x . . .
 &lt;/pre&gt;
 &lt;/p&gt;
-</description></item><item><guid zdef-178922033:isPermaLink="true">http://blog.ville.oikarinen.org/Defensive_and_offensive_programming.html</guid><title>Defensive and offensive programming</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Defensive_and_offensive_programming.html</link><pubDate>Fri, 27 Jun 2008 08:12:12 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Defensive_and_offensive_programming.html</guid><title>Defensive and offensive programming</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Defensive_and_offensive_programming.html</link><pubDate>Fri, 27 Jun 2008 08:12:12 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 For a soccer forward player, 1 success out of 100 attacks may mean a successful match.
 &lt;/p&gt;
 
@@ -505,7 +509,7 @@ It doesn't matter how many bad languages, frameworks, patterns or designs you tr
 &lt;p&gt;
 Often it's impossible to score without taking the risk of losing the ball.
 &lt;/p&gt;
-</description></item><item><guid zdef-579259242:isPermaLink="true">http://blog.ville.oikarinen.org/A_file_is_a_target_is_a_property.html</guid><title>A file is a target is a property</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/A_file_is_a_target_is_a_property.html</link><pubDate>Wed, 21 May 2008 08:46:37 -0400</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/A_file_is_a_target_is_a_property.html</guid><title>A file is a target is a property</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/A_file_is_a_target_is_a_property.html</link><pubDate>Wed, 21 May 2008 08:46:37 -0400</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
 Recently I have adopted a new pattern in my ant scripts to ensure correct dependencies between targets.
 &lt;/p&gt;
    
@@ -633,7 +637,7 @@ An example:
 &amp;lt;/project&gt;
 &lt;/pre&gt;
 &lt;/p&gt;
-</description></item><item><guid zdef-234305112:isPermaLink="true">http://blog.ville.oikarinen.org/Comparison_of_UIs_as_languages.html</guid><title>Comparison of UIs as languages</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Comparison_of_UIs_as_languages.html</link><pubDate>Wed, 26 Mar 2008 08:27:21 -0400</pubDate><category>Metaprogramming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Comparison_of_UIs_as_languages.html</guid><title>Comparison of UIs as languages</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Comparison_of_UIs_as_languages.html</link><pubDate>Wed, 26 Mar 2008 08:27:21 -0400</pubDate><category>Metaprogramming</category><description>&lt;p&gt;
 Communication uses languages. Communication involving computers (human-computer and computer-computer) is no exception.
 &lt;/p&gt;
 
@@ -728,7 +732,7 @@ with their subjective opinions about good GUI design.&lt;/li&gt;
 &lt;p&gt;
 Speech interface is a variation of a custom textual language, but not yet practical to implement. It's interesting to see what other language types emerge.
 &lt;/p&gt;
-</description></item><item><guid zdef609978866:isPermaLink="true">http://blog.ville.oikarinen.org/Where,_what_and_how,_in_that_order.html</guid><title>Where, what and how, in that order</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Where,_what_and_how,_in_that_order.html</link><pubDate>Tue, 19 Feb 2008 09:24:31 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Where,_what_and_how,_in_that_order.html</guid><title>Where, what and how, in that order</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Where,_what_and_how,_in_that_order.html</link><pubDate>Tue, 19 Feb 2008 09:24:31 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
 Before a client can tell us what he wants done, he must tell &lt;i&gt;where&lt;/i&gt; (the version of the "bin") he wants it done.
 &lt;/p&gt;
 
@@ -756,7 +760,7 @@ Afterwards we must be able to track who requested what (&lt;i&gt;where&lt;/i&gt;
 &lt;i&gt;
 Software Configuration Management is a reliable mapping between what a client sees and what a programmer sees.
 &lt;/i&gt;
-&lt;/p&gt;</description></item><item><guid zdef-1409582477:isPermaLink="true">http://blog.ville.oikarinen.org/Learning_by_overdoing.html</guid><title>Learning by overdoing</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Learning_by_overdoing.html</link><pubDate>Fri, 15 Feb 2008 08:45:19 -0500</pubDate><category>Agile</category><description>&lt;p&gt;
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Learning_by_overdoing.html</guid><title>Learning by overdoing</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Learning_by_overdoing.html</link><pubDate>Fri, 15 Feb 2008 08:45:19 -0500</pubDate><category>Agile</category><description>&lt;p&gt;
 Information Technology, the traditional view: automated, fast, repeatable, scalable, universal. Interconnected concepts and derivation of new ones.
 &lt;/p&gt;
    
@@ -803,7 +807,7 @@ capacity whenever they are needed.
 &lt;p&gt;
 I'm suffering some constant inconvenience in hope to minimize inconvenience with requirements worse than O(1). And the constant is decreasing all the time :)
 &lt;/p&gt;
-</description></item><item><guid zdef-744804168:isPermaLink="true">http://blog.ville.oikarinen.org/The_aesthetics_of_complex_simplicity.html</guid><title>The aesthetics of complex simplicity</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/The_aesthetics_of_complex_simplicity.html</link><pubDate>Wed, 13 Feb 2008 08:58:31 -0500</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/The_aesthetics_of_complex_simplicity.html</guid><title>The aesthetics of complex simplicity</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/The_aesthetics_of_complex_simplicity.html</link><pubDate>Wed, 13 Feb 2008 08:58:31 -0500</pubDate><category>Art of programming</category><description>&lt;p&gt;
 Last week I bought two excellent books, &lt;i&gt;The Art of the Snowflake: A Photographic Album&lt;/i&gt; by Kenneth Libbrecht
 and &lt;i&gt;Whisky Classified: choosing single malts by flavour&lt;/i&gt; by David Wishart.
 &lt;/p&gt;
@@ -823,7 +827,7 @@ Each distillery produces a unique whisky, but its production is amazinly uniform
 &lt;p&gt;
 If controlled chaos and simplicity of fundamentals are not aesthetically pleasing to a programmer, then what is.
 &lt;p&gt;
-</description></item><item><guid zdef-1509162034:isPermaLink="true">http://blog.ville.oikarinen.org/Hierarchy_is_not_a_property.html</guid><title>Hierarchy is not a property</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Hierarchy_is_not_a_property.html</link><pubDate>Mon, 11 Feb 2008 06:42:06 -0500</pubDate><category>Software Architecture</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Hierarchy_is_not_a_property.html</guid><title>Hierarchy is not a property</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Hierarchy_is_not_a_property.html</link><pubDate>Mon, 11 Feb 2008 06:42:06 -0500</pubDate><category>Software Architecture</category><description>&lt;p&gt;
 There are many cases where an item contains a property that defines its location inside a hierarchy:
 &lt;ul&gt;
 &lt;li&gt;In HTML a header element defines its own location in the (assumed) hierarchy of headers: an H1 header is "higher" than an H2 header.&lt;/li&gt;
@@ -850,7 +854,7 @@ writing and restructuring painless, especially if each section is defined in a s
 a section, and the article can be restructured simply by moving section references (the "include" expressions), without any need to touch the referenced section
 definitions.
 &lt;/p&gt;
-</description></item><item><guid zdef-515425231:isPermaLink="true">http://blog.ville.oikarinen.org/Startup_scripts_without_a_PRODUCT_HOME_variable.html</guid><title>Startup scripts without a PRODUCT_HOME variable</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Startup_scripts_without_a_PRODUCT_HOME_variable.html</link><pubDate>Tue, 5 Feb 2008 07:23:38 -0500</pubDate><category>Scripting</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Startup_scripts_without_a_PRODUCT_HOME_variable.html</guid><title>Startup scripts without a PRODUCT_HOME variable</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Startup_scripts_without_a_PRODUCT_HOME_variable.html</link><pubDate>Tue, 5 Feb 2008 07:23:38 -0500</pubDate><category>Scripting</category><description>&lt;p&gt;
 Another old and simple subject I should have posted a long time ago:
 &lt;/p&gt;
 
@@ -894,7 +898,7 @@ set SCRIPT_HOME=%~dp0
 set PRODUCT_HOME=%SCRIPT_HOME%\..
 &lt;/pre&gt;
 &lt;/p&gt;
-</description></item><item><guid zdef2077064873:isPermaLink="true">http://blog.ville.oikarinen.org/Subversion_and_the_direction_of_merges.html</guid><title>Subversion and the direction of merges</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Subversion_and_the_direction_of_merges.html</link><pubDate>Wed, 30 Jan 2008 09:20:07 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Subversion_and_the_direction_of_merges.html</guid><title>Subversion and the direction of merges</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Subversion_and_the_direction_of_merges.html</link><pubDate>Wed, 30 Jan 2008 09:20:07 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
 An obvious fact (by definition) is that fewer changes are wanted in a stable (release) branch than in an instable (development) branch.
 &lt;/p&gt;
    
@@ -915,7 +919,7 @@ instability.
 &lt;p&gt;
 Of course sometimes merging is needed in the wrong direction, too, but it should be avoided as an unwanted exception.
 &lt;/p&gt;
-</description></item><item><guid zdef867017531:isPermaLink="true">http://blog.ville.oikarinen.org/Eagerly_find_dish_machines_to_empty.html</guid><title>Eagerly find dish machines to empty</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Eagerly_find_dish_machines_to_empty.html</link><pubDate>Wed, 30 Jan 2008 08:15:02 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Eagerly_find_dish_machines_to_empty.html</guid><title>Eagerly find dish machines to empty</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Eagerly_find_dish_machines_to_empty.html</link><pubDate>Wed, 30 Jan 2008 08:15:02 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
 In general it's wise to be lazy. &lt;i&gt;Don't do it (yet)&lt;/i&gt;, &lt;i&gt;You Ain't Gonna Need It&lt;/i&gt;, &lt;i&gt;Don't Repeat Yourself&lt;/i&gt; etc.
 &lt;/p&gt;
 
@@ -930,7 +934,7 @@ Emptying the dish machine is one such task: if you delay it, you'll start piling
 &lt;p&gt;
 I think most SCM-related tasks belong to this category. Solving even a small problem in SCM gives easily more leverage than a moderate design refactoring.
 &lt;/p&gt;
-</description></item><item><guid zdef-372703032:isPermaLink="true">http://blog.ville.oikarinen.org/Race_driving_stories.html</guid><title>Race driving stories</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Race_driving_stories.html</link><pubDate>Mon, 3 Dec 2007 03:54:57 -0500</pubDate><category>Agile</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Race_driving_stories.html</guid><title>Race driving stories</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Race_driving_stories.html</link><pubDate>Mon, 3 Dec 2007 03:54:57 -0500</pubDate><category>Agile</category><description>&lt;p&gt;
 Next time I get a heap of pseudo-formal structured specification documents instead of user stories telling what the user really wants, I might try a lesson from a field older than ours:
 &lt;/p&gt;
 &lt;p&gt;
@@ -946,13 +950,13 @@ This will make you a better race driver.
 &lt;p&gt;
 Sounds like "As a &lt;u&gt;driver&lt;/u&gt; I want &lt;u&gt;my car to...&lt;/u&gt;" doesn't it :)
 &lt;/p&gt;
-</description></item><item><guid zdef-1141965179:isPermaLink="true">http://blog.ville.oikarinen.org/The_art_of_getting_rid_of_art.html</guid><title>The art of getting rid of art</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/The_art_of_getting_rid_of_art.html</link><pubDate>Tue, 9 Oct 2007 06:51:55 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/The_art_of_getting_rid_of_art.html</guid><title>The art of getting rid of art</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/The_art_of_getting_rid_of_art.html</link><pubDate>Tue, 9 Oct 2007 06:51:55 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 A good programmer practices the art of formalizing his art into a science.
 &lt;/p&gt;
 &lt;p&gt;
 I hate the art part enough to try to get rid of it. But at the same time I love the art and hope we'll never get there.
 &lt;/p&gt;
-</description></item><item><guid zdef-580253818:isPermaLink="true">http://blog.ville.oikarinen.org/Missing_Person.html</guid><title>Missing Person</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Missing_Person.html</link><pubDate>Fri, 5 Oct 2007 06:15:05 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Missing_Person.html</guid><title>Missing Person</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Missing_Person.html</link><pubDate>Fri, 5 Oct 2007 06:15:05 -0400</pubDate><category>Software Architecture</category><description>&lt;p&gt;
 This is a pattern I have discovered surprisingly often (you can also replace Patient with Customer and Doctor with Employee etc):
 &lt;/p&gt;
 
@@ -991,7 +995,7 @@ Either doctors are very healthy, or they are so shy they want another identity a
 &lt;p&gt;
 Of course extra complexity isn't good either, but I have seen more often reason to extract the missing Person entity here than not to.
 &lt;/p&gt;
-</description></item><item><guid zdef1936847584:isPermaLink="true">http://blog.ville.oikarinen.org/Java_package_hierarchy_is_only_in_the_name.html</guid><title>Java package hierarchy is only in the name</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Java_package_hierarchy_is_only_in_the_name.html</link><pubDate>Fri, 21 Sep 2007 09:12:42 -0400</pubDate><category>Java</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Java_package_hierarchy_is_only_in_the_name.html</guid><title>Java package hierarchy is only in the name</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Java_package_hierarchy_is_only_in_the_name.html</link><pubDate>Fri, 21 Sep 2007 09:12:42 -0400</pubDate><category>Java</category><description>&lt;p&gt;
 One of the minor annoyances of Java is that a package and its parent are as foreign to each other than any other pair of packages.
 &lt;/p&gt;
 &lt;p&gt;
@@ -1000,7 +1004,7 @@ In practice this means that if I want to split a package (module) into subpackag
 &lt;p&gt;
 A related problem is that there is no such thing as package private interfaces. Sure, the interface itself can be package private, but the method implementations must be public. So if I use a package private interface inside a package, a class unfortunate enough to be public and implement this internal interface must publish the supposedly internal interface methods.
 &lt;/p&gt;
-</description></item><item><guid zdef-333576816:isPermaLink="true">http://blog.ville.oikarinen.org/My_shell_scripts_start_to_get_infected_with_meta.html</guid><title>My shell scripts start to get infected with meta</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/My_shell_scripts_start_to_get_infected_with_meta.html</link><pubDate>Mon, 6 Aug 2007 08:27:41 -0400</pubDate><category>Metaprogramming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/My_shell_scripts_start_to_get_infected_with_meta.html</guid><title>My shell scripts start to get infected with meta</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/My_shell_scripts_start_to_get_infected_with_meta.html</link><pubDate>Mon, 6 Aug 2007 08:27:41 -0400</pubDate><category>Metaprogramming</category><description>&lt;p&gt;
 Recently I have discovered that my metaprogramming efforts have started to infect (&lt;a href="http://www.jroller.com/wipu/entry/you_are_what_you_feed"&gt;you are what you feed your brain with&lt;/a&gt;) my way of writing shell scripts.
 &lt;/p&gt;
 &lt;p&gt;
@@ -1009,7 +1013,7 @@ Earlier it felt dirty and "non-unixy" to generate temporary shell scripts. I fel
 &lt;p&gt;
 Now it feels quite good to process a set of files by generating separate commands for each file, piping them first to less for manual reviewing and finally to a new bash for execution. And it feels even better to manipulate the script with sed.
 &lt;/p&gt;
-</description></item><item><guid zdef1873609267:isPermaLink="true">http://blog.ville.oikarinen.org/Java_method_call_performance.html</guid><title>Java method call performance</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Java_method_call_performance.html</link><pubDate>Tue, 19 Jun 2007 03:54:41 -0400</pubDate><category>Java</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Java_method_call_performance.html</guid><title>Java method call performance</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Java_method_call_performance.html</link><pubDate>Tue, 19 Jun 2007 03:54:41 -0400</pubDate><category>Java</category><description>&lt;p&gt;
 Maybe this old performance test of mine interests someone.
 &lt;/p&gt;
 &lt;p&gt;
@@ -1181,13 +1185,13 @@ public class MethodCallPerformanceDemo {
 
 }
 &lt;/pre&gt;
-</description></item><item><guid zdef-1406488716:isPermaLink="true">http://blog.ville.oikarinen.org/Search_keywords_and_urls_as_a_textual_user_interface.html</guid><title>Search keywords and urls as a textual user interface</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Search_keywords_and_urls_as_a_textual_user_interface.html</link><pubDate>Mon, 28 May 2007 06:15:12 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Search_keywords_and_urls_as_a_textual_user_interface.html</guid><title>Search keywords and urls as a textual user interface</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Search_keywords_and_urls_as_a_textual_user_interface.html</link><pubDate>Mon, 28 May 2007 06:15:12 -0400</pubDate><category>Art of programming</category><description>&lt;p&gt;
 Maybe &lt;a href="http://catb.org/~esr/writings/unix-koans/gui-programmer.html"&gt;this philosophy&lt;/a&gt; gets a wider acceptance when filesystems are something like &lt;a href="http://www.namesys.com/whitepaper.html"&gt;this.&lt;/a&gt;
 &lt;/p&gt;
 &lt;p&gt;
 Imagine having to use only portals for web surfing...
 &lt;/p&gt;
-</description></item><item><guid zdef1581421768:isPermaLink="true">http://blog.ville.oikarinen.org/ngrease_0.1.0_released.html</guid><title>ngrease 0.1.0 released</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/ngrease_0.1.0_released.html</link><pubDate>Wed, 2 May 2007 06:34:29 -0400</pubDate><category>Metaprogramming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/ngrease_0.1.0_released.html</guid><title>ngrease 0.1.0 released</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/ngrease_0.1.0_released.html</link><pubDate>Wed, 2 May 2007 06:34:29 -0400</pubDate><category>Metaprogramming</category><description>&lt;p&gt;
 Yesterday I finally made the first release of my pet project, the
 &lt;a href="http://sourceforge.net/projects/ngrease"&gt;ngrease&lt;/a&gt; metalanguage.
 &lt;/p&gt;
@@ -1196,7 +1200,7 @@ Read the
 &lt;a href="http://ngrease.sourceforge.net/introduction.html"&gt;Introduction to ngrease&lt;/a&gt;
 for more information.
 &lt;/p&gt;
-</description></item><item><guid zdef-364050127:isPermaLink="true">http://blog.ville.oikarinen.org/Optimizing_the_SW_development_algorithm.html</guid><title>Optimizing the SW development algorithm</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Optimizing_the_SW_development_algorithm.html</link><pubDate>Fri, 3 Nov 2006 11:54:25 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Optimizing_the_SW_development_algorithm.html</guid><title>Optimizing the SW development algorithm</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Optimizing_the_SW_development_algorithm.html</link><pubDate>Fri, 3 Nov 2006 11:54:25 -0500</pubDate><category>SCM &amp; process</category><description>&lt;p&gt;
 &lt;i&gt;Warning: this article contains simplifications so read on with care :)&lt;/i&gt;
 &lt;/p&gt;
 
@@ -1267,7 +1271,7 @@ Whoops:
 
 &lt;p&gt;
 &lt;code&gt;Warning: unused variable: programmer&lt;/code&gt;
-&lt;/p&gt;</description></item><item><guid zdef719984148:isPermaLink="true">http://blog.ville.oikarinen.org/Usage_driven_interface,_test_driven_semantics.html</guid><title>Usage driven interface, test driven semantics</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Usage_driven_interface,_test_driven_semantics.html</link><pubDate>Tue, 13 Jun 2006 07:29:37 -0400</pubDate><category>Art of programming</category><description>&lt;h5&gt;The problem&lt;/h5&gt;
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Usage_driven_interface,_test_driven_semantics.html</guid><title>Usage driven interface, test driven semantics</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Usage_driven_interface,_test_driven_semantics.html</link><pubDate>Tue, 13 Jun 2006 07:29:37 -0400</pubDate><category>Art of programming</category><description>&lt;h5&gt;The problem&lt;/h5&gt;
 
 &lt;p&gt;
 I need a class &lt;i&gt;A&lt;/i&gt; to provide service &lt;i&gt;a&lt;/i&gt; for me. First I create &lt;i&gt;ATest&lt;/i&gt; and
@@ -1332,7 +1336,7 @@ scenario for &lt;i&gt;B&lt;/i&gt;. Most of the do-undo-redo work probably happen
 This prototype gives enough insight of the nature of &lt;i&gt;B&lt;/i&gt; so it's
 straightforward to make all assumptions as general and explicit as
 possible by writing them as tests in &lt;i&gt;BTest&lt;/i&gt;.
-&lt;/p&gt;</description></item><item><guid zdef1503242036:isPermaLink="true">http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html</guid><title>Server-client is a deployment model, not architectural</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html</link><pubDate>Wed, 4 Jan 2006 05:18:46 -0500</pubDate><category>Software Architecture</category><description>&lt;p&gt;
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html</guid><title>Server-client is a deployment model, not architectural</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html</link><pubDate>Wed, 4 Jan 2006 05:18:46 -0500</pubDate><category>Software Architecture</category><description>&lt;p&gt;
 Separating interface and implementation is a good old principle,
 but surprisingly often it is violated.
 &lt;/p&gt;
@@ -1356,7 +1360,7 @@ So the "minimal" set of modules for a client-server application is client-api-ap
 
 &lt;p&gt;
 Of course, there can be several client and server implementations, but 3 is the minimum number of modules.
-&lt;/p&gt;</description></item><item><guid zdef-1172813017:isPermaLink="true">http://blog.ville.oikarinen.org/Splitting_project_to_subprojects_for_easy_dependency_management.html</guid><title>Splitting project to subprojects for easy dependency management</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Splitting_project_to_subprojects_for_easy_dependency_management.html</link><pubDate>Wed, 14 Dec 2005 06:59:46 -0500</pubDate><category>Eclipse</category><description>&lt;p&gt;
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Splitting_project_to_subprojects_for_easy_dependency_management.html</guid><title>Splitting project to subprojects for easy dependency management</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Splitting_project_to_subprojects_for_easy_dependency_management.html</link><pubDate>Wed, 14 Dec 2005 06:59:46 -0500</pubDate><category>Eclipse</category><description>&lt;p&gt;
 I have found splitting a project to many subprojects an efficient way to make it difficult for coworkers to break the architecture by accidentally creating unwanted dependencies.
 &lt;/p&gt;
 &lt;p&gt;
@@ -1370,12 +1374,12 @@ The solution is to create subprojects &lt;code&gt;theproduct-tests&lt;/code&gt; 
 &lt;/p&gt;
 &lt;p&gt;
 I apply this same subproject principle to 3rd party utilities (both production and test). For example database, xml and xunit libraries all have subprojects of their own. This way I have fine-grained control over dependencies to them, too.
-&lt;/p&gt;</description></item><item><guid zdef259858277:isPermaLink="true">http://blog.ville.oikarinen.org/Only_different_in_your_mind.html</guid><title>Only different in your mind</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Only_different_in_your_mind.html</link><pubDate>Thu, 24 Nov 2005 03:21:36 -0500</pubDate><category>Art of programming</category><description>&lt;p&gt;
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Only_different_in_your_mind.html</guid><title>Only different in your mind</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Only_different_in_your_mind.html</link><pubDate>Thu, 24 Nov 2005 03:21:36 -0500</pubDate><category>Art of programming</category><description>&lt;p&gt;
 Software creates it, makes it grow. It's structure surrounds us and binds us. Semantic beings are we, not this crude tagged text. 
 &lt;/p&gt;
 &lt;p&gt;
 You must feel the XML around you. Here, between you...me...the Mac...the Unix...everywhere! Yes, even between this land and that other operating system!
-&lt;/p&gt;</description></item><item><guid zdef-2043189660:isPermaLink="true">http://blog.ville.oikarinen.org/Coding_by_need.html</guid><title>Coding by need</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Coding_by_need.html</link><pubDate>Fri, 7 Oct 2005 10:02:32 -0400</pubDate><category>Java</category><description>&lt;p&gt;
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Coding_by_need.html</guid><title>Coding by need</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Coding_by_need.html</link><pubDate>Fri, 7 Oct 2005 10:02:32 -0400</pubDate><category>Java</category><description>&lt;p&gt;
 Test driven development essentially means that the only legitimate reason to write code
 is a failing test.
 &lt;/p&gt;
@@ -1399,7 +1403,7 @@ Quickfix coding is more economic, too: you need fewer keystrokes as the IDE crea
 
 &lt;p&gt;
 I think &lt;i&gt;Coding by need&lt;/i&gt; is a nice common name for TDD and Quickfix coding.
-&lt;/p&gt;</description></item><item><guid zdef-181347546:isPermaLink="true">http://blog.ville.oikarinen.org/CVS_module_structure_for_a_multiproject_with_a_main_build_script.html</guid><title>CVS module structure for a multiproject with a main build script</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/CVS_module_structure_for_a_multiproject_with_a_main_build_script.html</link><pubDate>Fri, 12 Aug 2005 02:30:35 -0400</pubDate><category>SCM &amp; process</category><description>This may sound stupid to CVS gurus, but for me it took years to invent this essentially simple trick.
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/CVS_module_structure_for_a_multiproject_with_a_main_build_script.html</guid><title>CVS module structure for a multiproject with a main build script</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/CVS_module_structure_for_a_multiproject_with_a_main_build_script.html</link><pubDate>Fri, 12 Aug 2005 02:30:35 -0400</pubDate><category>SCM &amp; process</category><description>This may sound stupid to CVS gurus, but for me it took years to invent this essentially simple trick.
 &lt;p&gt;
 A common multiproject workspace structure is like this:
 &lt;ul&gt;
@@ -1431,7 +1435,7 @@ ws-commonfiles -d product-x-workspace commonfiles the_main_buildfile the_main_re
 product-x-workspace -d . &amp;subproject-a &amp;subproject-b &amp;ws-commonfiles
 &lt;/pre&gt;
 
-will give the wanted workspace structure using command &lt;code&gt;cvs co product-x-workspace&lt;/code&gt;.</description></item><item><guid zdef-1575478474:isPermaLink="true">http://blog.ville.oikarinen.org/Easy_testing_with_embedded_openejb_and_hsql.html</guid><title>Easy testing with embedded openejb and hsql</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Easy_testing_with_embedded_openejb_and_hsql.html</link><pubDate>Tue, 3 May 2005 09:34:33 -0400</pubDate><category>Java</category><description>&lt;p&gt;
+will give the wanted workspace structure using command &lt;code&gt;cvs co product-x-workspace&lt;/code&gt;.</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Easy_testing_with_embedded_openejb_and_hsql.html</guid><title>Easy testing with embedded openejb and hsql</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Easy_testing_with_embedded_openejb_and_hsql.html</link><pubDate>Tue, 3 May 2005 09:34:33 -0400</pubDate><category>Java</category><description>&lt;p&gt;
 In my current project I happened to question the need to install and set up a DBMS and an EJB container just to be able to run automatic tests during development. Luckily I found out that both openejb and hsql can be "embedded" i.e. used in-process with no per-workspace configuration.
 &lt;/p&gt;
 &lt;p&gt;
@@ -1486,7 +1490,7 @@ The embedded volatile hsql DBMS can be used by creating the connection like this
         Connection c = DriverManager.getConnection("jdbc:hsqldb:mem:aname",
                 "sa", "");
 &lt;/pre&gt;
-&lt;/p&gt;</description></item><item><guid zdef-485136001:isPermaLink="true">http://blog.ville.oikarinen.org/Multiple_exit_points_and_cyclomatic_complexity.html</guid><title>Multiple exit points and cyclomatic complexity</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Multiple_exit_points_and_cyclomatic_complexity.html</link><pubDate>Fri, 25 Feb 2005 07:56:00 -0500</pubDate><category>Java</category><description>&lt;p&gt;
+&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Multiple_exit_points_and_cyclomatic_complexity.html</guid><title>Multiple exit points and cyclomatic complexity</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Multiple_exit_points_and_cyclomatic_complexity.html</link><pubDate>Fri, 25 Feb 2005 07:56:00 -0500</pubDate><category>Java</category><description>&lt;p&gt;
 I don't understand what is the rationale behind always using a single exit point in a function. I can only see the problem: it may increase cyclomatic complexity.
 &lt;/p&gt;
 
@@ -1538,17 +1542,17 @@ Compare these two abstract examples and their cyclomatic complexity:
 
 
 &lt;/p&gt;
-</description></item><item><guid zdef-6036007:isPermaLink="true">http://blog.ville.oikarinen.org/You_are_what_you_feed_your_brain_with.html</guid><title>You are what you feed your brain with</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/You_are_what_you_feed_your_brain_with.html</link><pubDate>Fri, 25 Feb 2005 07:10:49 -0500</pubDate><category>Art of programming</category><description>	&lt;p&gt;I believe we people make lots of unconscious choices when we design or write programs, and the bigger the stress and hurry, the less conscious we are about our choices.&lt;/p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/You_are_what_you_feed_your_brain_with.html</guid><title>You are what you feed your brain with</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/You_are_what_you_feed_your_brain_with.html</link><pubDate>Fri, 25 Feb 2005 07:10:49 -0500</pubDate><category>Art of programming</category><description>	&lt;p&gt;I believe we people make lots of unconscious choices when we design or write programs, and the bigger the stress and hurry, the less conscious we are about our choices.&lt;/p&gt;
 
 	&lt;p&gt;Where do the choices come from? I believe we mimic patterns and principles we see around us.&lt;/p&gt;
 
 	&lt;p&gt;With every new thing (technology, language, tool etc) we learn, we not only learn the details of that very thing, but also the more universal principles and patterns behind it. And this unconscious learning is what builds our &amp;#8220;unconscious pool of patterns&amp;#8220; that helps us create software under stress by doing some of the supposedly trivial choices for us and letting our conscience concentrate on the more unique problems.&lt;/p&gt;
 
-	&lt;p&gt;That&amp;#8216;s why I want to use &amp;#8220;the Mouse Oriented Operating System&amp;#8221; as little as possible, for example. (I&amp;#8216;m using it now, but that&amp;#8216;s my customer&amp;#8216;s choice, not mine :-). I don&amp;#8216;t want to pollute my brain with bad principles. I want to stand on the shoulders of a giant instead of a dwarf :-)&lt;/p&gt;</description></item><item><guid zdef-1567643448:isPermaLink="true">http://blog.ville.oikarinen.org/Io_is_to_syntaxes_what_a_proverb_is_to_wise_thoughts.html</guid><title>Io is to syntaxes what a proverb is to wise thoughts</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Io_is_to_syntaxes_what_a_proverb_is_to_wise_thoughts.html</link><pubDate>Mon, 21 Feb 2005 09:31:42 -0500</pubDate><category>Art of programming</category><description>	&lt;p&gt;&lt;a href="http://www.iolanguage.com" title=""&gt;Io &lt;/a&gt;seems like a very promising language (or if the community won&amp;#8216;t grow for some reason, at least it will be a good concept to build upon).&lt;/p&gt;
+	&lt;p&gt;That&amp;#8216;s why I want to use &amp;#8220;the Mouse Oriented Operating System&amp;#8221; as little as possible, for example. (I&amp;#8216;m using it now, but that&amp;#8216;s my customer&amp;#8216;s choice, not mine :-). I don&amp;#8216;t want to pollute my brain with bad principles. I want to stand on the shoulders of a giant instead of a dwarf :-)&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Io_is_to_syntaxes_what_a_proverb_is_to_wise_thoughts.html</guid><title>Io is to syntaxes what a proverb is to wise thoughts</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Io_is_to_syntaxes_what_a_proverb_is_to_wise_thoughts.html</link><pubDate>Mon, 21 Feb 2005 09:31:42 -0500</pubDate><category>Art of programming</category><description>	&lt;p&gt;&lt;a href="http://www.iolanguage.com" title=""&gt;Io &lt;/a&gt;seems like a very promising language (or if the community won&amp;#8216;t grow for some reason, at least it will be a good concept to build upon).&lt;/p&gt;
 
 	&lt;p&gt;There are lots of nice things about it (like prototypes), but what I liked most is its syntax: it is minimal (=machine-handleable) but readable. It reminds me of the Mathematica language, in which everything is a statement.&lt;/p&gt;
 
-	&lt;p&gt;And it&amp;#8216;s really pure &lt;span class="caps"&gt;OOP&lt;/span&gt;: even the code itself consists of objects. Could Io finally be &amp;#8220;the one&amp;#8221;: &lt;span class="caps"&gt;LISP&lt;/span&gt; power with a human-readable syntax!&lt;/p&gt;</description></item><item><guid zdef-365547922:isPermaLink="true">http://blog.ville.oikarinen.org/Methods_belong_to_objects_-_or_do_they.html</guid><title>Methods belong to objects - or do they?</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Methods_belong_to_objects_-_or_do_they.html</link><pubDate>Mon, 21 Feb 2005 09:11:43 -0500</pubDate><category>Art of programming</category><description>One of the differences between OOP and procedural programming is that OOP binds the data and its operations together.
+	&lt;p&gt;And it&amp;#8216;s really pure &lt;span class="caps"&gt;OOP&lt;/span&gt;: even the code itself consists of objects. Could Io finally be &amp;#8220;the one&amp;#8221;: &lt;span class="caps"&gt;LISP&lt;/span&gt; power with a human-readable syntax!&lt;/p&gt;</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Methods_belong_to_objects_-_or_do_they.html</guid><title>Methods belong to objects - or do they?</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Methods_belong_to_objects_-_or_do_they.html</link><pubDate>Mon, 21 Feb 2005 09:11:43 -0500</pubDate><category>Art of programming</category><description>One of the differences between OOP and procedural programming is that OOP binds the data and its operations together.
 &lt;p&gt;
 So it could be said that an object "owns" its methods.
 &lt;p&gt;
@@ -1574,7 +1578,7 @@ And some mechanisms already exist:
 &lt;b&gt;Conclusion&lt;/b&gt;
 &lt;p&gt;
 From the object user's point of view methods do belong to their object, but from the creator's point of view they don't, and language syntaxes shouldn't pretend they do. In procedural languages there was no connection between the data and its operations. In OOP languages there is a connection, but the syntax for defining that connection should be as flexible as possible.
-</description></item><item><guid zdef-1084509813:isPermaLink="true">http://blog.ville.oikarinen.org/Formalize_and_expand.html</guid><title>Formalize and expand</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Formalize_and_expand.html</link><pubDate>Thu, 3 Feb 2005 08:21:04 -0500</pubDate><category>Art of programming</category><description>&lt;p&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Formalize_and_expand.html</guid><title>Formalize and expand</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Formalize_and_expand.html</link><pubDate>Thu, 3 Feb 2005 08:21:04 -0500</pubDate><category>Art of programming</category><description>&lt;p&gt;
 A &lt;a href="http://www.theserverside.com/news/thread.tss?thread_id=31439"&gt;
 thread in theserverside
 &lt;/a&gt;
@@ -1617,7 +1621,7 @@ This is what I meant in my &lt;a href="http://jroller.com/page/wipu/20050201#aut
 But why is that people who are capable of using formal languages (i.e. programmers) are so reluctant to use their ability in SCM? I have several theories, but more about them later...
 &lt;/p&gt;
 
-</description></item><item><guid zdef953594871:isPermaLink="true">http://blog.ville.oikarinen.org/Automation_as_documentation__programming_machines,_not_humans.html</guid><title>Automation as documentation: programming machines, not humans</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Automation_as_documentation__programming_machines,_not_humans.html</link><pubDate>Wed, 2 Feb 2005 02:49:54 -0500</pubDate><category>SCM &amp; process</category><description>&amp;lt;sarcasm&gt;&lt;br/&gt;
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/Automation_as_documentation__programming_machines,_not_humans.html</guid><title>Automation as documentation: programming machines, not humans</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/Automation_as_documentation__programming_machines,_not_humans.html</link><pubDate>Wed, 2 Feb 2005 02:49:54 -0500</pubDate><category>SCM &amp; process</category><description>&amp;lt;sarcasm&gt;&lt;br/&gt;
 
 It's amusing to read some HOWTO documentation for the "mouse-oriented" operating system and other software infected by its "philosophy":
 &lt;br/&gt;
@@ -1635,5 +1639,5 @@ Seriously, in SCM this decadenze is far too common: good old principles are forg
 &lt;br/&gt;
 Automation is not only making things easier, it's about making things possible.
 More about that later...
-</description></item><item><guid zdef-266868612:isPermaLink="true">http://blog.ville.oikarinen.org/First_post.html</guid><title>First post</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/First_post.html</link><pubDate>Thu, 27 Jan 2005 09:43:59 -0500</pubDate><category>General</category><description>Decided to join the community :-)
+</description></item><item><guid isPermaLink="true">http://blog.ville.oikarinen.org/First_post.html</guid><title>First post</title><creator>Ville Oikarinen</creator><link>http://blog.ville.oikarinen.org/First_post.html</link><pubDate>Thu, 27 Jan 2005 09:43:59 -0500</pubDate><category>General</category><description>Decided to join the community :-)
 </description></item></channel></Rss>
