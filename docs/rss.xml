@@ -6,12 +6,11 @@
   <description>Ville Oikarinen blogging (mostly) about programming since 2005</description>
   <language>en-us</language>
   <copyright>(c) Ville Oikarinen 2005 -</copyright>
-  <lastBuildDate>Mon Mar 19 22:15:41 EET 2018</lastBuildDate>
+  <lastBuildDate>Mon, 19 Mar 2018 22:28:59 +0200</lastBuildDate>
   <generator>Some simple custom java code</generator>
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Dependency_visibility.html</guid>
       <title>Dependency visibility</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Dependency_visibility.html</link>
       <pubDate>Fri, 29 Apr 2011 09:01:13 -0400</pubDate>
       <category>Software Architecture</category>
@@ -20,7 +19,7 @@
 &lt;/p&gt;
 
 &lt;p&gt;
-After &lt;a href=&quot;Automated_analysis,_hand-picked_data.html&quot;&gt;analysing&lt;/a&gt; the essential class-level dependencies we were puzzled: the dependencies seemed ok! What was wrong with our code if not dependencies?!
+After &lt;a href=&quot;http://blog.ville.oikarinen.org/Automated_analysis,_hand-picked_data.html&quot;&gt;analysing&lt;/a&gt; the essential class-level dependencies we were puzzled: the dependencies seemed ok! What was wrong with our code if not dependencies?!
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -39,7 +38,6 @@ We upgraded our script to draw a bold arrow for public dependencies, and this im
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Automated_analysis,_hand-picked_data.html</guid>
       <title>Automated analysis, hand-picked data</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Automated_analysis,_hand-picked_data.html</link>
       <pubDate>Fri, 29 Apr 2011 08:53:16 -0400</pubDate>
       <category>Software Architecture</category>
@@ -48,7 +46,7 @@ We upgraded our script to draw a bold arrow for public dependencies, and this im
 &lt;/p&gt;
 
 &lt;p&gt;
-After we had &lt;a href=&quot;Architecture_design_as_a_graph_layout_problem.html&quot;&gt;designed&lt;/a&gt; what our project&apos;s dependency graph should look like we started evaluating the current status. Certain parts of the code felt too entangled so a dependency analysis would be needed.
+After we had &lt;a href=&quot;http://blog.ville.oikarinen.org/Architecture_design_as_a_graph_layout_problem.html&quot;&gt;designed&lt;/a&gt; what our project&apos;s dependency graph should look like we started evaluating the current status. Certain parts of the code felt too entangled so a dependency analysis would be needed.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -79,7 +77,6 @@ The result was as to-the-point as a hand-drawn picture but reliable and repeatab
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Iteration_and_clicks_correlation.html</guid>
       <title>Iteration and clicks correlation</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Iteration_and_clicks_correlation.html</link>
       <pubDate>Tue, 19 Apr 2011 08:41:42 -0400</pubDate>
       <category>Art of programming</category>
@@ -103,7 +100,6 @@ If only it was possible to calculate this from automated tests and the backlog..
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Architecture_design_as_a_graph_layout_problem.html</guid>
       <title>Architecture design as a graph layout problem</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Architecture_design_as_a_graph_layout_problem.html</link>
       <pubDate>Fri, 28 Jan 2011 03:34:56 -0500</pubDate>
       <category>Software Architecture</category>
@@ -113,17 +109,17 @@ In a recent project we had very hard time finding a common language to describe 
 &lt;/p&gt;
 &lt;h4&gt;So many ways to create layers, so little value&lt;/h4&gt;
 &lt;p&gt;
-&lt;a href=&quot;Software_architecture_is_human-only_communication.html&quot;&gt;Architecture&lt;/a&gt; is often visualized as layers. Although layer is a useful concept, it&apos;s not enough and can be a very restricting way of thinking about the architecture.
+&lt;a href=&quot;http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html&quot;&gt;Architecture&lt;/a&gt; is often visualized as layers. Although layer is a useful concept, it&apos;s not enough and can be a very restricting way of thinking about the architecture.
 &lt;/p&gt;
 &lt;p&gt;
 A purely layered design is &lt;i&gt;one-dimensional&lt;/i&gt; so the full capacity of the paper or screen is not utilized. When forcing things to layers, different people make different choices, and this makes communication more difficult.
 &lt;/p&gt;
 &lt;p&gt;
-For example, utilities and services are difficult to place in any layer. They are (literally) orthogonal to the layered design, potentially used from anywhere, while the dependencies between the actual layers are more controlled. In addition, I feel that often the &lt;i&gt;interfaces&lt;/i&gt; between layers are forgotten, and &lt;a href=&quot;Server-client_is_a_deployment_model,_not_architectural.html&quot;&gt;only the implementations are counted as layers&lt;/a&gt;.
+For example, utilities and services are difficult to place in any layer. They are (literally) orthogonal to the layered design, potentially used from anywhere, while the dependencies between the actual layers are more controlled. In addition, I feel that often the &lt;i&gt;interfaces&lt;/i&gt; between layers are forgotten, and &lt;a href=&quot;http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html&quot;&gt;only the implementations are counted as layers&lt;/a&gt;.
 &lt;/p&gt;
 &lt;h4&gt;It&apos;s about modules and dependencies&lt;/h4&gt;
 &lt;p&gt;
-Architecture is essentially about dividing a problem into subproblems, or modularization, and managing dependencies between the modules. So, on the abstract level, the big picture of the software is a &lt;a href=&quot;Why_modules.html&quot;&gt;dependency graph of the modules&lt;/a&gt;.
+Architecture is essentially about dividing a problem into subproblems, or modularization, and managing dependencies between the modules. So, on the abstract level, the big picture of the software is a &lt;a href=&quot;http://blog.ville.oikarinen.org/Why_modules.html&quot;&gt;dependency graph of the modules&lt;/a&gt;.
 &lt;/p&gt;
 &lt;p&gt;
 One day I realized that the only hard part in design is to identify the subproblems and their dependencies. Divide and conquer. That part wasn&apos;t the subject of any arguments. The problem was only about visualizing it. And that, difficult as it seemed for us, is just about applying a &lt;i&gt;graph layout algorithm&lt;/i&gt;, and computers are good at that!
@@ -217,7 +213,6 @@ Another striking discovery is that the whole graph is drawn around the domain mo
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html</guid>
       <title>Software architecture is human-only communication</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html</link>
       <pubDate>Wed, 26 Jan 2011 10:28:00 -0500</pubDate>
       <category>Software Architecture</category>
@@ -237,18 +232,17 @@ Some architecture is needed, but by this definition, the less the better. Maybe 
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Why_modules.html</guid>
       <title>Why modules</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Why_modules.html</link>
       <pubDate>Tue, 14 Sep 2010 08:55:53 -0400</pubDate>
       <category>Software Architecture</category>
       <description>&lt;p&gt;
 &lt;i&gt;Why split a project into modules?&lt;/i&gt;
-To organize the code? Not necessarily a bad idea, but this doesn&apos;t necessarily mean modularization: just use directories to create any of the endless taxonomies possible. Personally I don&apos;t really need this: I open the &lt;a href=&quot;Traceability_and_entry_points.html&quot;&gt;entry points&lt;/a&gt; (often tests) directly by class name, and other code can be found by navigating, &lt;a href=&quot;Coding_by_need.html&quot;&gt;by need&lt;/a&gt;.
+To organize the code? Not necessarily a bad idea, but this doesn&apos;t necessarily mean modularization: just use directories to create any of the endless taxonomies possible. Personally I don&apos;t really need this: I open the &lt;a href=&quot;http://blog.ville.oikarinen.org/Traceability_and_entry_points.html&quot;&gt;entry points&lt;/a&gt; (often tests) directly by class name, and other code can be found by navigating, &lt;a href=&quot;http://blog.ville.oikarinen.org/Coding_by_need.html&quot;&gt;by need&lt;/a&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
 &lt;i&gt;What&apos;s modularization then if not just subdirectories?&lt;/i&gt;
-If the code is compiled and published as one big ball, it&apos;s not modularized, even if it&apos;s internally split into subdirectories. &lt;i&gt;A module is a unit of compilation.&lt;/i&gt; The modules can be compiled individually only, if their dependencies have no cycles. &lt;i&gt;Modularization &lt;a href=&quot;Splitting_project_to_subprojects_for_easy_dependency_management.html&quot;&gt;enforces&lt;/a&gt; dependency management.&lt;/i&gt;
+If the code is compiled and published as one big ball, it&apos;s not modularized, even if it&apos;s internally split into subdirectories. &lt;i&gt;A module is a unit of compilation.&lt;/i&gt; The modules can be compiled individually only, if their dependencies have no cycles. &lt;i&gt;Modularization &lt;a href=&quot;http://blog.ville.oikarinen.org/Splitting_project_to_subprojects_for_easy_dependency_management.html&quot;&gt;enforces&lt;/a&gt; dependency management.&lt;/i&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -282,12 +276,11 @@ Now, lets take a new look at the first, most superficial reason for modularizati
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Traceability_and_entry_points.html</guid>
       <title>Traceability and entry points</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Traceability_and_entry_points.html</link>
       <pubDate>Thu, 9 Sep 2010 09:18:18 -0400</pubDate>
       <category>Java</category>
       <description>&lt;p&gt;
-&lt;i&gt;Traceability&lt;/i&gt; is a kind of &lt;a href=&quot;Walking_on_red_carpet.html&quot;&gt;red carpet&lt;/a&gt; (or maybe green?) for learning to understand code. Ideally you can trace the code &lt;i&gt;statically&lt;/i&gt;, by reading and ctrl-clicking calls. Polymorphism reduces traceability, but when used wisely, it&apos;s a very acceptable compromise. Inheritance also reduces traceability, but it&apos;s also difficult to use wisely :)
+&lt;i&gt;Traceability&lt;/i&gt; is a kind of &lt;a href=&quot;http://blog.ville.oikarinen.org/Walking_on_red_carpet.html&quot;&gt;red carpet&lt;/a&gt; (or maybe green?) for learning to understand code. Ideally you can trace the code &lt;i&gt;statically&lt;/i&gt;, by reading and ctrl-clicking calls. Polymorphism reduces traceability, but when used wisely, it&apos;s a very acceptable compromise. Inheritance also reduces traceability, but it&apos;s also difficult to use wisely :)
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -310,12 +303,11 @@ The long-term solution is of course to reduce the number of entry points. You do
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Walking_on_red_carpet.html</guid>
       <title>Walking on red carpet</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Walking_on_red_carpet.html</link>
       <pubDate>Fri, 7 May 2010 09:09:05 -0400</pubDate>
       <category>Art of programming</category>
       <description>&lt;p&gt;
-I like to think of &lt;a href=&quot;Coding_by_need.html&quot;&gt;coding by need&lt;/a&gt; as &lt;i&gt;walking on a red carpet&lt;/i&gt; from a problem to its solution. A friendly test failure or compilation error message nicely points to the next problem that needs the programmer&apos;s attention.
+I like to think of &lt;a href=&quot;http://blog.ville.oikarinen.org/Coding_by_need.html&quot;&gt;coding by need&lt;/a&gt; as &lt;i&gt;walking on a red carpet&lt;/i&gt; from a problem to its solution. A friendly test failure or compilation error message nicely points to the next problem that needs the programmer&apos;s attention.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -334,7 +326,6 @@ Premature green is another root of all evil.
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/A_new_frog_in_a_new_kettle.html</guid>
       <title>A new frog in a new kettle</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/A_new_frog_in_a_new_kettle.html</link>
       <pubDate>Mon, 26 Apr 2010 09:49:39 -0400</pubDate>
       <category>General</category>
@@ -366,7 +357,6 @@ It is said that frogs can be boiled to death because they don&apos;t detect the 
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Test_the_zero_case_first.html</guid>
       <title>Test the zero case first</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Test_the_zero_case_first.html</link>
       <pubDate>Thu, 27 Aug 2009 11:06:34 -0400</pubDate>
       <category>Art of programming</category>
@@ -386,7 +376,6 @@ Second, the zero case is often a nasty &lt;i&gt;boundary case&lt;/i&gt; that get
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Post-vacation_cleanup.html</guid>
       <title>Post-vacation cleanup</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Post-vacation_cleanup.html</link>
       <pubDate>Thu, 27 Aug 2009 10:33:17 -0400</pubDate>
       <category>General</category>
@@ -414,7 +403,6 @@ I started from the &lt;i&gt;bottom...&lt;/i&gt;, with simple refactorings, and g
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Blueberry_bonus.html</guid>
       <title>Blueberry bonus</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Blueberry_bonus.html</link>
       <pubDate>Thu, 20 Aug 2009 08:05:00 -0400</pubDate>
       <category>General</category>
@@ -443,7 +431,6 @@ It&apos;s tempting to start requiring the things I know I will do anyway. But th
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Bottom-up_to_TDD.html</guid>
       <title>Bottom-up to TDD</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Bottom-up_to_TDD.html</link>
       <pubDate>Tue, 30 Jun 2009 01:48:38 -0400</pubDate>
       <category>Art of programming</category>
@@ -466,7 +453,6 @@ When we have manually verified that this one special case looks good, we can wri
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/If_not_AST,_edit_whole_lines_at_least.html</guid>
       <title>If not AST, edit whole lines at least</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/If_not_AST,_edit_whole_lines_at_least.html</link>
       <pubDate>Tue, 30 Jun 2009 01:45:43 -0400</pubDate>
       <category>Eclipse</category>
@@ -494,14 +480,13 @@ This is also one more reason to add a linebreak after the last line!
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Nested_fluent_builder.html</guid>
       <title>Nested fluent builder</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Nested_fluent_builder.html</link>
       <pubDate>Wed, 31 Dec 2008 09:10:32 -0500</pubDate>
       <category>Java</category>
       <description>&lt;p&gt;
 Today I published a little article on the Sysart developer site,
 &lt;a href=&quot;http://web.sysart.fi/developer/articles:nested_fluent_builder&quot;&gt;Nested fluent builder&lt;/a&gt;,
-showing how &lt;a href=&quot;Fluent_events.html&quot;&gt;fluent events&lt;/a&gt; that form
+showing how &lt;a href=&quot;http://blog.ville.oikarinen.org/Fluent_events.html&quot;&gt;fluent events&lt;/a&gt; that form
 nested sentences open surprising technological possibilities, as well as being pleasant to the eye.
 &lt;/p&gt;
 </description>
@@ -509,7 +494,6 @@ nested sentences open surprising technological possibilities, as well as being p
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/TODO_test_and_implement.html</guid>
       <title>TODO test and implement</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/TODO_test_and_implement.html</link>
       <pubDate>Tue, 2 Dec 2008 06:18:17 -0500</pubDate>
       <category>Java</category>
@@ -533,7 +517,6 @@ The second line relies on the &lt;i&gt;courage&lt;/i&gt; TDD gives. A runtime ex
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Fluent_events.html</guid>
       <title>Fluent events</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Fluent_events.html</link>
       <pubDate>Tue, 28 Oct 2008 08:56:54 -0400</pubDate>
       <category>Java</category>
@@ -570,7 +553,6 @@ Usually fluent interfaces are written for human users, but this had been written
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Entity,_valuetype_and_equals.html</guid>
       <title>Entity, valuetype and equals</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Entity,_valuetype_and_equals.html</link>
       <pubDate>Fri, 24 Oct 2008 04:11:30 -0400</pubDate>
       <category>Java</category>
@@ -594,13 +576,12 @@ A valuetype, on the other hand, is identifiable by all its observable attributes
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/connect-the-dots,_top_or_bottom.html</guid>
       <title>connect-the-dots, top or bottom</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/connect-the-dots,_top_or_bottom.html</link>
       <pubDate>Tue, 21 Oct 2008 07:19:12 -0400</pubDate>
       <category>Art of programming</category>
       <description>&lt;p&gt;
 I have never really decided whether I like &lt;i&gt;top-down&lt;/i&gt; or &lt;i&gt;bottom-up&lt;/i&gt; more.
-&lt;a href=&quot;Coding_by_need.html&quot;&gt;Coding by need&lt;/a&gt; (coding by intention and TDD) seem to point at top-down. On the other hand, I have been most productive with &lt;i&gt;ngrease&lt;/i&gt; by
+&lt;a href=&quot;http://blog.ville.oikarinen.org/Coding_by_need.html&quot;&gt;Coding by need&lt;/a&gt; (coding by intention and TDD) seem to point at top-down. On the other hand, I have been most productive with &lt;i&gt;ngrease&lt;/i&gt; by
 &lt;a href=&quot;http://doi.acm.org/10.1145/1297846.1297921&quot;&gt;extracting abstractions&lt;/a&gt; from concrete examples, bottom-up.
 &lt;/p&gt;
 
@@ -668,7 +649,6 @@ The second diagram shows the problem after both special cases of this principle 
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Defensive_and_offensive_programming.html</guid>
       <title>Defensive and offensive programming</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Defensive_and_offensive_programming.html</link>
       <pubDate>Fri, 27 Jun 2008 08:12:12 -0400</pubDate>
       <category>Art of programming</category>
@@ -698,10 +678,9 @@ Often it&apos;s impossible to score without taking the risk of losing the ball.
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/A_file_is_a_target_is_a_property.html</guid>
       <title>A file is a target is a property</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/A_file_is_a_target_is_a_property.html</link>
       <pubDate>Wed, 21 May 2008 08:46:37 -0400</pubDate>
-      <category>SCM & process</category>
+      <category>SCM &amp; process</category>
       <description>&lt;p&gt;
 Recently I have adopted a new pattern in my ant scripts to ensure correct dependencies between targets.
 &lt;/p&gt;
@@ -835,7 +814,6 @@ An example:
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Comparison_of_UIs_as_languages.html</guid>
       <title>Comparison of UIs as languages</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Comparison_of_UIs_as_languages.html</link>
       <pubDate>Wed, 26 Mar 2008 08:27:21 -0400</pubDate>
       <category>Metaprogramming</category>
@@ -939,10 +917,9 @@ Speech interface is a variation of a custom textual language, but not yet practi
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Where,_what_and_how,_in_that_order.html</guid>
       <title>Where, what and how, in that order</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Where,_what_and_how,_in_that_order.html</link>
       <pubDate>Tue, 19 Feb 2008 09:24:31 -0500</pubDate>
-      <category>SCM & process</category>
+      <category>SCM &amp; process</category>
       <description>&lt;p&gt;
 Before a client can tell us what he wants done, he must tell &lt;i&gt;where&lt;/i&gt; (the version of the &quot;bin&quot;) he wants it done.
 &lt;/p&gt;
@@ -976,7 +953,6 @@ Software Configuration Management is a reliable mapping between what a client se
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Learning_by_overdoing.html</guid>
       <title>Learning by overdoing</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Learning_by_overdoing.html</link>
       <pubDate>Fri, 15 Feb 2008 08:45:19 -0500</pubDate>
       <category>Agile</category>
@@ -1032,7 +1008,6 @@ I&apos;m suffering some constant inconvenience in hope to minimize inconvenience
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/The_aesthetics_of_complex_simplicity.html</guid>
       <title>The aesthetics of complex simplicity</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/The_aesthetics_of_complex_simplicity.html</link>
       <pubDate>Wed, 13 Feb 2008 08:58:31 -0500</pubDate>
       <category>Art of programming</category>
@@ -1061,7 +1036,6 @@ If controlled chaos and simplicity of fundamentals are not aesthetically pleasin
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Hierarchy_is_not_a_property.html</guid>
       <title>Hierarchy is not a property</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Hierarchy_is_not_a_property.html</link>
       <pubDate>Mon, 11 Feb 2008 06:42:06 -0500</pubDate>
       <category>Software Architecture</category>
@@ -1097,7 +1071,6 @@ definitions.
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Startup_scripts_without_a_PRODUCT_HOME_variable.html</guid>
       <title>Startup scripts without a PRODUCT_HOME variable</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Startup_scripts_without_a_PRODUCT_HOME_variable.html</link>
       <pubDate>Tue, 5 Feb 2008 07:23:38 -0500</pubDate>
       <category>Scripting</category>
@@ -1150,10 +1123,9 @@ set PRODUCT_HOME=%SCRIPT_HOME%\..
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Subversion_and_the_direction_of_merges.html</guid>
       <title>Subversion and the direction of merges</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Subversion_and_the_direction_of_merges.html</link>
       <pubDate>Wed, 30 Jan 2008 09:20:07 -0500</pubDate>
-      <category>SCM & process</category>
+      <category>SCM &amp; process</category>
       <description>&lt;p&gt;
 An obvious fact (by definition) is that fewer changes are wanted in a stable (release) branch than in an instable (development) branch.
 &lt;/p&gt;
@@ -1180,10 +1152,9 @@ Of course sometimes merging is needed in the wrong direction, too, but it should
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Eagerly_find_dish_machines_to_empty.html</guid>
       <title>Eagerly find dish machines to empty</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Eagerly_find_dish_machines_to_empty.html</link>
       <pubDate>Wed, 30 Jan 2008 08:15:02 -0500</pubDate>
-      <category>SCM & process</category>
+      <category>SCM &amp; process</category>
       <description>&lt;p&gt;
 In general it&apos;s wise to be lazy. &lt;i&gt;Don&apos;t do it (yet)&lt;/i&gt;, &lt;i&gt;You Ain&apos;t Gonna Need It&lt;/i&gt;, &lt;i&gt;Don&apos;t Repeat Yourself&lt;/i&gt; etc.
 &lt;/p&gt;
@@ -1204,7 +1175,6 @@ I think most SCM-related tasks belong to this category. Solving even a small pro
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Race_driving_stories.html</guid>
       <title>Race driving stories</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Race_driving_stories.html</link>
       <pubDate>Mon, 3 Dec 2007 03:54:57 -0500</pubDate>
       <category>Agile</category>
@@ -1229,7 +1199,6 @@ Sounds like &quot;As a &lt;u&gt;driver&lt;/u&gt; I want &lt;u&gt;my car to...&lt
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/The_art_of_getting_rid_of_art.html</guid>
       <title>The art of getting rid of art</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/The_art_of_getting_rid_of_art.html</link>
       <pubDate>Tue, 9 Oct 2007 06:51:55 -0400</pubDate>
       <category>Art of programming</category>
@@ -1244,7 +1213,6 @@ I hate the art part enough to try to get rid of it. But at the same time I love 
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Missing_Person.html</guid>
       <title>Missing Person</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Missing_Person.html</link>
       <pubDate>Fri, 5 Oct 2007 06:15:05 -0400</pubDate>
       <category>Software Architecture</category>
@@ -1292,7 +1260,6 @@ Of course extra complexity isn&apos;t good either, but I have seen more often re
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Java_package_hierarchy_is_only_in_the_name.html</guid>
       <title>Java package hierarchy is only in the name</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Java_package_hierarchy_is_only_in_the_name.html</link>
       <pubDate>Fri, 21 Sep 2007 09:12:42 -0400</pubDate>
       <category>Java</category>
@@ -1310,12 +1277,11 @@ A related problem is that there is no such thing as package private interfaces. 
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/My_shell_scripts_start_to_get_infected_with_meta.html</guid>
       <title>My shell scripts start to get infected with meta</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/My_shell_scripts_start_to_get_infected_with_meta.html</link>
       <pubDate>Mon, 6 Aug 2007 08:27:41 -0400</pubDate>
       <category>Metaprogramming</category>
       <description>&lt;p&gt;
-Recently I have discovered that my metaprogramming efforts have started to infect (&lt;a href=&quot;You_are_what_you_feed_your_brain_with.html&quot;&gt;you are what you feed your brain with&lt;/a&gt;) my way of writing shell scripts.
+Recently I have discovered that my metaprogramming efforts have started to infect (&lt;a href=&quot;http://blog.ville.oikarinen.org/You_are_what_you_feed_your_brain_with.html&quot;&gt;you are what you feed your brain with&lt;/a&gt;) my way of writing shell scripts.
 &lt;/p&gt;
 &lt;p&gt;
 Earlier it felt dirty and &quot;non-unixy&quot; to generate temporary shell scripts. I felt pride every time I managed to avoid it using xargs, find -exec, functions, loops etc.
@@ -1328,7 +1294,6 @@ Now it feels quite good to process a set of files by generating separate command
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Java_method_call_performance.html</guid>
       <title>Java method call performance</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Java_method_call_performance.html</link>
       <pubDate>Tue, 19 Jun 2007 03:54:41 -0400</pubDate>
       <category>Java</category>
@@ -1509,7 +1474,6 @@ public class MethodCallPerformanceDemo {
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Search_keywords_and_urls_as_a_textual_user_interface.html</guid>
       <title>Search keywords and urls as a textual user interface</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Search_keywords_and_urls_as_a_textual_user_interface.html</link>
       <pubDate>Mon, 28 May 2007 06:15:12 -0400</pubDate>
       <category>Art of programming</category>
@@ -1524,7 +1488,6 @@ Imagine having to use only portals for web surfing...
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/ngrease_0.1.0_released.html</guid>
       <title>ngrease 0.1.0 released</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/ngrease_0.1.0_released.html</link>
       <pubDate>Wed, 2 May 2007 06:34:29 -0400</pubDate>
       <category>Metaprogramming</category>
@@ -1542,10 +1505,9 @@ for more information.
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Optimizing_the_SW_development_algorithm.html</guid>
       <title>Optimizing the SW development algorithm</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Optimizing_the_SW_development_algorithm.html</link>
       <pubDate>Fri, 3 Nov 2006 11:54:25 -0500</pubDate>
-      <category>SCM & process</category>
+      <category>SCM &amp; process</category>
       <description>&lt;p&gt;
 &lt;i&gt;Warning: this article contains simplifications so read on with care :)&lt;/i&gt;
 &lt;/p&gt;
@@ -1622,7 +1584,6 @@ Whoops:
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Usage_driven_interface,_test_driven_semantics.html</guid>
       <title>Usage driven interface, test driven semantics</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Usage_driven_interface,_test_driven_semantics.html</link>
       <pubDate>Tue, 13 Jun 2006 07:29:37 -0400</pubDate>
       <category>Art of programming</category>
@@ -1696,7 +1657,6 @@ possible by writing them as tests in &lt;i&gt;BTest&lt;/i&gt;.
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html</guid>
       <title>Server-client is a deployment model, not architectural</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html</link>
       <pubDate>Wed, 4 Jan 2006 05:18:46 -0500</pubDate>
       <category>Software Architecture</category>
@@ -1729,7 +1689,6 @@ Of course, there can be several client and server implementations, but 3 is the 
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Splitting_project_to_subprojects_for_easy_dependency_management.html</guid>
       <title>Splitting project to subprojects for easy dependency management</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Splitting_project_to_subprojects_for_easy_dependency_management.html</link>
       <pubDate>Wed, 14 Dec 2005 06:59:46 -0500</pubDate>
       <category>Eclipse</category>
@@ -1752,7 +1711,6 @@ I apply this same subproject principle to 3rd party utilities (both production a
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Only_different_in_your_mind.html</guid>
       <title>Only different in your mind</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Only_different_in_your_mind.html</link>
       <pubDate>Thu, 24 Nov 2005 03:21:36 -0500</pubDate>
       <category>Art of programming</category>
@@ -1766,7 +1724,6 @@ You must feel the XML around you. Here, between you...me...the Mac...the Unix...
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Coding_by_need.html</guid>
       <title>Coding by need</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Coding_by_need.html</link>
       <pubDate>Fri, 7 Oct 2005 10:02:32 -0400</pubDate>
       <category>Java</category>
@@ -1799,10 +1756,9 @@ I think &lt;i&gt;Coding by need&lt;/i&gt; is a nice common name for TDD and Quic
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/CVS_module_structure_for_a_multiproject_with_a_main_build_script.html</guid>
       <title>CVS module structure for a multiproject with a main build script</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/CVS_module_structure_for_a_multiproject_with_a_main_build_script.html</link>
       <pubDate>Fri, 12 Aug 2005 02:30:35 -0400</pubDate>
-      <category>SCM & process</category>
+      <category>SCM &amp; process</category>
       <description>This may sound stupid to CVS gurus, but for me it took years to invent this essentially simple trick.
 &lt;p&gt;
 A common multiproject workspace structure is like this:
@@ -1840,7 +1796,6 @@ will give the wanted workspace structure using command &lt;code&gt;cvs co produc
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Easy_testing_with_embedded_openejb_and_hsql.html</guid>
       <title>Easy testing with embedded openejb and hsql</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Easy_testing_with_embedded_openejb_and_hsql.html</link>
       <pubDate>Tue, 3 May 2005 09:34:33 -0400</pubDate>
       <category>Java</category>
@@ -1904,7 +1859,6 @@ The embedded volatile hsql DBMS can be used by creating the connection like this
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Multiple_exit_points_and_cyclomatic_complexity.html</guid>
       <title>Multiple exit points and cyclomatic complexity</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Multiple_exit_points_and_cyclomatic_complexity.html</link>
       <pubDate>Fri, 25 Feb 2005 07:56:00 -0500</pubDate>
       <category>Java</category>
@@ -1965,7 +1919,6 @@ Compare these two abstract examples and their cyclomatic complexity:
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/You_are_what_you_feed_your_brain_with.html</guid>
       <title>You are what you feed your brain with</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/You_are_what_you_feed_your_brain_with.html</link>
       <pubDate>Fri, 25 Feb 2005 07:10:49 -0500</pubDate>
       <category>Art of programming</category>
@@ -1980,7 +1933,6 @@ Compare these two abstract examples and their cyclomatic complexity:
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Io_is_to_syntaxes_what_a_proverb_is_to_wise_thoughts.html</guid>
       <title>Io is to syntaxes what a proverb is to wise thoughts</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Io_is_to_syntaxes_what_a_proverb_is_to_wise_thoughts.html</link>
       <pubDate>Mon, 21 Feb 2005 09:31:42 -0500</pubDate>
       <category>Art of programming</category>
@@ -1993,7 +1945,6 @@ Compare these two abstract examples and their cyclomatic complexity:
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Methods_belong_to_objects_-_or_do_they.html</guid>
       <title>Methods belong to objects - or do they?</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Methods_belong_to_objects_-_or_do_they.html</link>
       <pubDate>Mon, 21 Feb 2005 09:11:43 -0500</pubDate>
       <category>Art of programming</category>
@@ -2028,7 +1979,6 @@ From the object user&apos;s point of view methods do belong to their object, but
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Formalize_and_expand.html</guid>
       <title>Formalize and expand</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Formalize_and_expand.html</link>
       <pubDate>Thu, 3 Feb 2005 08:21:04 -0500</pubDate>
       <category>Art of programming</category>
@@ -2080,10 +2030,9 @@ But why is that people who are capable of using formal languages (i.e. programme
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Automation_as_documentation__programming_machines,_not_humans.html</guid>
       <title>Automation as documentation: programming machines, not humans</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/Automation_as_documentation__programming_machines,_not_humans.html</link>
       <pubDate>Wed, 2 Feb 2005 02:49:54 -0500</pubDate>
-      <category>SCM & process</category>
+      <category>SCM &amp; process</category>
       <description>&amp;lt;sarcasm&gt;&lt;br/&gt;
 
 It&apos;s amusing to read some HOWTO documentation for the &quot;mouse-oriented&quot; operating system and other software infected by its &quot;philosophy&quot;:
@@ -2107,7 +2056,6 @@ More about that later...
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/First_post.html</guid>
       <title>First post</title>
-      <creator>Ville Oikarinen</creator>
       <link>http://blog.ville.oikarinen.org/First_post.html</link>
       <pubDate>Thu, 27 Jan 2005 09:43:59 -0500</pubDate>
       <category>General</category>

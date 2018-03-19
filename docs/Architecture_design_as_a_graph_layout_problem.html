@@ -6,17 +6,17 @@ In a recent project we had very hard time finding a common language to describe 
 </p>
 <h4>So many ways to create layers, so little value</h4>
 <p>
-<a href="Software_architecture_is_human-only_communication.html">Architecture</a> is often visualized as layers. Although layer is a useful concept, it's not enough and can be a very restricting way of thinking about the architecture.
+<a href="http://blog.ville.oikarinen.org/Software_architecture_is_human-only_communication.html">Architecture</a> is often visualized as layers. Although layer is a useful concept, it's not enough and can be a very restricting way of thinking about the architecture.
 </p>
 <p>
 A purely layered design is <i>one-dimensional</i> so the full capacity of the paper or screen is not utilized. When forcing things to layers, different people make different choices, and this makes communication more difficult.
 </p>
 <p>
-For example, utilities and services are difficult to place in any layer. They are (literally) orthogonal to the layered design, potentially used from anywhere, while the dependencies between the actual layers are more controlled. In addition, I feel that often the <i>interfaces</i> between layers are forgotten, and <a href="Server-client_is_a_deployment_model,_not_architectural.html">only the implementations are counted as layers</a>.
+For example, utilities and services are difficult to place in any layer. They are (literally) orthogonal to the layered design, potentially used from anywhere, while the dependencies between the actual layers are more controlled. In addition, I feel that often the <i>interfaces</i> between layers are forgotten, and <a href="http://blog.ville.oikarinen.org/Server-client_is_a_deployment_model,_not_architectural.html">only the implementations are counted as layers</a>.
 </p>
 <h4>It's about modules and dependencies</h4>
 <p>
-Architecture is essentially about dividing a problem into subproblems, or modularization, and managing dependencies between the modules. So, on the abstract level, the big picture of the software is a <a href="Why_modules.html">dependency graph of the modules</a>.
+Architecture is essentially about dividing a problem into subproblems, or modularization, and managing dependencies between the modules. So, on the abstract level, the big picture of the software is a <a href="http://blog.ville.oikarinen.org/Why_modules.html">dependency graph of the modules</a>.
 </p>
 <p>
 One day I realized that the only hard part in design is to identify the subproblems and their dependencies. Divide and conquer. That part wasn't the subject of any arguments. The problem was only about visualizing it. And that, difficult as it seemed for us, is just about applying a <i>graph layout algorithm</i>, and computers are good at that!
