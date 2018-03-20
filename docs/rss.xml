@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0"> xmlns:atom="http://www.w3.org/2005/Atom"
 <channel>
   <title>Mapping thoughts to language</title>
   <link>http://blog.ville.oikarinen.org</link>
+  <atom:link href="http://blog.ville.oikarinen.org/rss.xml" rel="self" type="application/rss+xml"/>
   <description>Ville Oikarinen blogging (mostly) about programming since 2005</description>
   <language>en-us</language>
   <copyright>(c) Ville Oikarinen 2005 -</copyright>
-  <lastBuildDate>Mon, 19 Mar 2018 22:28:59 +0200</lastBuildDate>
+  <lastBuildDate>Tue, 20 Mar 2018 19:57:31 +0200</lastBuildDate>
   <generator>Some simple custom java code</generator>
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Dependency_visibility.html</guid>
@@ -191,7 +192,7 @@ Then we asked Dottie, our new chief architect, to design the system:
 &lt;pre&gt;$ dot -Tps design.dot -o design.ps &amp;&amp; gv design.ps&lt;/pre&gt;
 &lt;/p&gt;
 &lt;p&gt;
-&lt;img src=&quot;design-as-layout.png&quot; alt=&quot;graph&quot;/&gt;
+&lt;img src=&quot;http://blog.ville.oikarinen.org/design-as-layout.png&quot; alt=&quot;graph&quot;/&gt;
 &lt;/p&gt;
 &lt;h4&gt;Enjoying the results&lt;/h4&gt;
 &lt;p&gt;
