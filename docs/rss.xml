@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"> xmlns:atom="http://www.w3.org/2005/Atom"
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Mapping thoughts to language</title>
   <link>http://blog.ville.oikarinen.org</link>
@@ -7,7 +7,7 @@
   <description>Ville Oikarinen blogging (mostly) about programming since 2005</description>
   <language>en-us</language>
   <copyright>(c) Ville Oikarinen 2005 -</copyright>
-  <lastBuildDate>Tue, 20 Mar 2018 19:57:31 +0200</lastBuildDate>
+  <lastBuildDate>Tue, 20 Mar 2018 20:00:24 +0200</lastBuildDate>
   <generator>Some simple custom java code</generator>
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Dependency_visibility.html</guid>
