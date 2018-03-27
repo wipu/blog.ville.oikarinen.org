@@ -7,7 +7,7 @@
   <description>Ville Oikarinen blogging (mostly) about programming since 2005</description>
   <language>en-us</language>
   <copyright>(c) Ville Oikarinen 2005 -</copyright>
-  <lastBuildDate>Tue, 27 Mar 2018 09:00:52 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 27 Mar 2018 09:02:43 +0300</lastBuildDate>
   <generator>Some simple custom java code</generator>
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/I_m_back.html</guid>
@@ -28,7 +28,7 @@
 &lt;/p&gt;
 
 &lt;p&gt;
-  Comments are welcome, either publicly on this site or privately to my firstname at lastname dot org email address. Oh, and you can also subsribe to the &lt;a href=&quot;rss.xml&quot;&gt;RSS feed&lt;/a&gt;.
+  Comments are welcome, either publicly on this site or privately to my firstname at lastname dot org email address. Oh, and you can also subsribe to the &lt;a href=&quot;http://blog.ville.oikarinen.org/rss.xml&quot;&gt;RSS feed&lt;/a&gt;.
 &lt;/p&gt;
 </description>
     </item>
