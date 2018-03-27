@@ -8,6 +8,7 @@ body {
 
 .rss-link-div {
     float: right;
+    margin-right: 1em;
 }
 
 .rss-link {
@@ -57,6 +58,16 @@ p.jroller-origin {
 
 p.jroller-origin > a {
 	color: DarkGray;
+}
+
+.link-to-index {
+    font-size: smaller;
+    text-align: center;
+    font-style: italic;
+}
+
+.link-to-index > a {
+    color: DarkGray;
 }
 
 p.pubdate {
