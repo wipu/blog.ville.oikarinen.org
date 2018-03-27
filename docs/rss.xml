@@ -7,8 +7,31 @@
   <description>Ville Oikarinen blogging (mostly) about programming since 2005</description>
   <language>en-us</language>
   <copyright>(c) Ville Oikarinen 2005 -</copyright>
-  <lastBuildDate>Tue, 27 Mar 2018 07:29:15 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 27 Mar 2018 08:08:40 +0300</lastBuildDate>
   <generator>Some simple custom java code</generator>
+    <item>
+      <guid isPermaLink="true">http://blog.ville.oikarinen.org/I_m_back.html</guid>
+      <title>I'm back</title>
+      <link>http://blog.ville.oikarinen.org/I_m_back.html</link>
+      <pubDate>Tue Mar 27 07:30:48 2018 +0300</pubDate>
+      <category>General</category>
+      <description>&lt;p&gt;
+  Almost seven years since my &lt;a href=&quot;Dependency_visibility.html&quot;&gt;last post&lt;/a&gt;! And since then the site hosting my blog (jroller.com, RIP) has gone down.
+&lt;/p&gt;
+
+&lt;p&gt;
+  But now I&apos;m back(ed up by &lt;a href=&quot;https://github.com/wipu/blog.ville.oikarinen.org&quot;&gt;github&lt;/a&gt;). It feels great to use version control for hosting this site.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Unfortunately I wasn&apos;t able to restore readers&apos; comments from my backups. But future comments will be safe as &lt;a href=&quot;https://github.com/wipu/blog.ville.oikarinen.org/issues&quot;&gt;github issue comments&lt;/a&gt; (thanks to &lt;a href=&quot;https://utteranc.es/&quot;&gt;utteranc.es&lt;/a&gt; by Jeremy Danyow). A github account is needed for commenting (at least for now), but since I&apos;m mostly blogging about programming, that shouldn&apos;t be a problem to my potential target audience.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Comments are welcome, either publicly on this site or privately to my firstname at lastname dot org email address. Oh, and you can also subsribe to the &lt;a href=&quot;rss.xml&quot;&gt;RSS feed&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+    </item>
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Dependency_visibility.html</guid>
       <title>Dependency visibility</title>
