@@ -7,13 +7,13 @@
   <description>Ville Oikarinen blogging (mostly) about programming since 2005</description>
   <language>en-us</language>
   <copyright>(c) Ville Oikarinen 2005 -</copyright>
-  <lastBuildDate>Tue, 03 Apr 2018 20:13:35 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 03 Apr 2018 20:14:38 +0300</lastBuildDate>
   <generator>Some simple custom java code</generator>
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/Another_sourceforge_to_github_migration.html</guid>
       <title>Another sourceforge to github migration</title>
       <link>http://blog.ville.oikarinen.org/Another_sourceforge_to_github_migration.html</link>
-      <pubDate>Tue, 03 Apr 2018 20:14:00 +0300</pubDate>
+      <pubDate>Tue, 03 Apr 2018 20:13:51 +0300</pubDate>
       <category>General</category>
       <description>&lt;p&gt;
   Today I noticed that building the &lt;a href=&quot;http://iwant.fluentjava.org/&quot;&gt;iwant tutorial&lt;/a&gt; was broken because the sourceforge download link of my &lt;i&gt;descript&lt;/i&gt; tool was broken.
