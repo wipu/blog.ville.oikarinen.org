@@ -1,0 +1,48 @@
+<html><head><title>Another sourceforge to github migration</title><link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head><body><div class='rss-link-div'><a href='rss.xml' class='rss-link'>RSS</a></div>
+<div class='link-to-index'><a href='index.html'>blog.ville.oikarinen.org - Mapping thoughts to language</a></div>
+<div class='article'>
+<h1>Another sourceforge to github migration</h1>
+<p>
+  Today I noticed that building the <a href="http://iwant.fluentjava.org/">iwant tutorial</a> was broken because the sourceforge download link of my <i>descript</i> tool was broken.
+</p>
+
+<p>
+  So, I moved <a href="https://github.com/wipu/descript">descript to github</a>. Earlier I had done this to iwant itself. Sourceforge downloads are a bit unreliable, and the worst is that sometimes they don't even fail properly: the download succeeds, but the downloaded file is just an HTML file with an error message.
+</p>
+
+<p>
+  I think I'll gradually move all my live projects to github. I'm grateful to sourceforge for all the years together, but the pragmatic fact is that it's time to move on.
+</p>
+
+<p>
+  The actual migration from subversion to git was super easy. This is what I did with descript, for example:
+</p>
+
+<p>
+  I created the project but left the repository empty, by choosing not to add a license or a readme. Then I migrated and pushed the sourceforge subversion repository &mdash; the latter part as instructed by the github project creation wizard:
+</p>
+
+<div class='console'>
+  <samp>
+    <kbd class='shell prompt'>~ $ </kbd><kbd class='shell cmd'>cat users.txt</kbd><br/>
+    <kbd class='shell output'>wipu_ = Ville Oikarinen &lt;ville@oikarinen.org&gt;</kbd><br/>
+    <kbd class='shell prompt'>~ $ </kbd><kbd class='shell cmd'>git svn clone --authors-file=users.txt https://svn.code.sf.net/p/descript/code/trunk</kbd><br/>
+    <kbd class='shell prompt'>~ $ </kbd><kbd class='shell cmd'>cd trunk</kbd><br/>
+    <kbd class='shell prompt'>~/trunk $ </kbd><kbd class='shell cmd'>git remote add origin https://github.com/wipu/descript.git</kbd><br/>
+    <kbd class='shell prompt'>~/trunk $ </kbd><kbd class='shell cmd'>git push -u origin master</kbd><br/>
+  </samp>
+</div>
+
+<br/>
+</div>
+<p class='pubdate'>Published on 2018-04-03</p>
+<p>
+<script src="https://utteranc.es/client.js"
+        repo="wipu/blog.ville.oikarinen.org"
+        branch="master"
+        issue-term="url"
+        async>
+</script>
+</p>
+</body></html>

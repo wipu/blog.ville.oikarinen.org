@@ -7,8 +7,48 @@
   <description>Ville Oikarinen blogging (mostly) about programming since 2005</description>
   <language>en-us</language>
   <copyright>(c) Ville Oikarinen 2005 -</copyright>
-  <lastBuildDate>Tue, 27 Mar 2018 21:29:56 +0300</lastBuildDate>
+  <lastBuildDate>Tue, 03 Apr 2018 20:13:35 +0300</lastBuildDate>
   <generator>Some simple custom java code</generator>
+    <item>
+      <guid isPermaLink="true">http://blog.ville.oikarinen.org/Another_sourceforge_to_github_migration.html</guid>
+      <title>Another sourceforge to github migration</title>
+      <link>http://blog.ville.oikarinen.org/Another_sourceforge_to_github_migration.html</link>
+      <pubDate>Tue, 03 Apr 2018 20:14:00 +0300</pubDate>
+      <category>General</category>
+      <description>&lt;p&gt;
+  Today I noticed that building the &lt;a href=&quot;http://iwant.fluentjava.org/&quot;&gt;iwant tutorial&lt;/a&gt; was broken because the sourceforge download link of my &lt;i&gt;descript&lt;/i&gt; tool was broken.
+&lt;/p&gt;
+
+&lt;p&gt;
+  So, I moved &lt;a href=&quot;https://github.com/wipu/descript&quot;&gt;descript to github&lt;/a&gt;. Earlier I had done this to iwant itself. Sourceforge downloads are a bit unreliable, and the worst is that sometimes they don&apos;t even fail properly: the download succeeds, but the downloaded file is just an HTML file with an error message.
+&lt;/p&gt;
+
+&lt;p&gt;
+  I think I&apos;ll gradually move all my live projects to github. I&apos;m grateful to sourceforge for all the years together, but the pragmatic fact is that it&apos;s time to move on.
+&lt;/p&gt;
+
+&lt;p&gt;
+  The actual migration from subversion to git was super easy. This is what I did with descript, for example:
+&lt;/p&gt;
+
+&lt;p&gt;
+  I created the project but left the repository empty, by choosing not to add a license or a readme. Then I migrated and pushed the sourceforge subversion repository &amp;mdash; the latter part as instructed by the github project creation wizard:
+&lt;/p&gt;
+
+&lt;div class=&apos;console&apos;&gt;
+  &lt;samp&gt;
+    &lt;kbd class=&apos;shell prompt&apos;&gt;~ $ &lt;/kbd&gt;&lt;kbd class=&apos;shell cmd&apos;&gt;cat users.txt&lt;/kbd&gt;&lt;br/&gt;
+    &lt;kbd class=&apos;shell output&apos;&gt;wipu_ = Ville Oikarinen &amp;lt;ville@oikarinen.org&amp;gt;&lt;/kbd&gt;&lt;br/&gt;
+    &lt;kbd class=&apos;shell prompt&apos;&gt;~ $ &lt;/kbd&gt;&lt;kbd class=&apos;shell cmd&apos;&gt;git svn clone --authors-file=users.txt https://svn.code.sf.net/p/descript/code/trunk&lt;/kbd&gt;&lt;br/&gt;
+    &lt;kbd class=&apos;shell prompt&apos;&gt;~ $ &lt;/kbd&gt;&lt;kbd class=&apos;shell cmd&apos;&gt;cd trunk&lt;/kbd&gt;&lt;br/&gt;
+    &lt;kbd class=&apos;shell prompt&apos;&gt;~/trunk $ &lt;/kbd&gt;&lt;kbd class=&apos;shell cmd&apos;&gt;git remote add origin https://github.com/wipu/descript.git&lt;/kbd&gt;&lt;br/&gt;
+    &lt;kbd class=&apos;shell prompt&apos;&gt;~/trunk $ &lt;/kbd&gt;&lt;kbd class=&apos;shell cmd&apos;&gt;git push -u origin master&lt;/kbd&gt;&lt;br/&gt;
+  &lt;/samp&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+</description>
+    </item>
     <item>
       <guid isPermaLink="true">http://blog.ville.oikarinen.org/I_m_back.html</guid>
       <title>I'm back</title>
